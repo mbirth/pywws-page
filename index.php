@@ -1,3 +1,7 @@
+<?php
+    // ini_set( 'date.timezone', 'Europe/Berlin' );
+    date_default_timezone_set( 'Europe/Berlin' );
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de" dir="ltr">
 <head>
@@ -17,27 +21,6 @@
             $('ul.tabs').tabs('div.panes > div');
         } );
         // ]]>
-    </script>
-    <script type='text/javascript'>
-      google.load('visualization', '1', {'packages':['annotatedtimeline']});
-      google.setOnLoadCallback( startFetch );
-      function startFetch() {
-        var weather_data = jQuery.getJSON( 'json_raw.txt', function( data, textStatus ) {
-            var graph = new google.visualization.DataTable();
-
-            graph.addColumn( 'date', data[0][0] );
-            graph.addColumn( 'number', data[0][1] );
-
-            for ( var i in data ) {
-                if ( i == 0 ) continue;
-                var row = data[i];
-                graph.addRows( [ new Date( parseInt(row[0]) * 1000 ), parseFloat(row[1]) ] );
-            }
-
-            var chart = new google.visualization.AnnotatedTimeLine( document.getElementById('temp_chart') );
-            chart.draw( graph, {displayAnnotations: false} );
-        } );
-      }
     </script>
     <link rel="stylesheet" type="text/css" href="css/tabs-no-images.css" />
     <style type="text/css">
@@ -94,9 +77,6 @@
     }
     // ]]>
 </script>
-
-// Note how you must specify the size of the container element explicitly!
-<div id="temp_chart" style="width: 700px; height: 240px;"></div>
 
 <ul class="tabs">
     <li><a href="#6hrs">6 Stunden</a></li>
