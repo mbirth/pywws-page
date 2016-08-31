@@ -2,25 +2,37 @@
     // ini_set( 'date.timezone', 'Europe/Berlin' );
     date_default_timezone_set( 'Europe/Berlin' );
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de" dir="ltr">
+<!DOCTYPE html>
+<html lang="de" dir="ltr" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:profile="http://ogp.me/ns/profile#">
 <head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+    <meta property="og:title" content="Wetterdaten für Falkensee"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://fks.birth-online.de/"/>
+    <meta property="og:image" content="http://fks.birth-online.de/falkensee.png"/>
+    <meta property="og:description" content="Wetterdaten für Falkensee seit 2009."/>
+    <meta property="og:latitude" content="52.574202"/>
+    <meta property="og:longitude" content="13.127534"/>
+    <meta property="og:street-address" content="Lortzingallee 16"/>
+    <meta property="og:locality" content="Falkensee"/>
+    <meta property="og:region" content="BR"/>
+    <meta property="og:postal-code" content="14612"/>
+    <meta property="og:country-name" content="Germany"/>
+    <meta property="og:phone_number" content="+49 3322 3198"/>
+    <meta property="og:fax_number" content="+49 3322 289547"/>
+
     <title>Wetterdaten für Falkensee</title>
-    <link rel="SHORTCUT ICON" type="image/vnd.microsoft.icon" href="/favicon.ico" />
-    <link rel="alternate" type="application/rss+xml" title="Daten der letzten Stunde" href="feed_hourly.xml" />
-    <link rel="alternate" type="application/rss+xml" title="Daten des letzten Tages" href="feed_daily.xml" />
-    <script type="text/javascript" src="http://www.google.com/jsapi?key=ABQIAAAANEKwbeFz1aWWanxMaKJYnRRNOcV_wtLph1PjT6OqnqWDY5WWGBSMbv40QA3AaN93X3hyLBMOQMpv6A"></script>
-    <script type="text/javascript">
-        google.load( 'jquery', '1.4.2' );
-    </script>
+    <link rel="SHORTCUT ICON" type="image/vnd.microsoft.icon" href="/favicon.ico"/>
+    <link rel="alternate" type="application/rss+xml" title="Daten der letzten Stunde" href="feed_hourly.xml"/>
+    <link rel="alternate" type="application/rss+xml" title="Daten des letzten Tages" href="feed_daily.xml"/>
+    <!--script type="text/javascript" src="//www.google.com/jsapi"></script-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.tools.min.js"></script>
     <script type="text/javascript">
-        // <![CDATA[
         $(document).ready( function() {
             $('ul.tabs').tabs('div.panes > div');
         } );
-        // ]]>
     </script>
     <link rel="stylesheet" type="text/css" href="css/tabs-no-images.css" />
     <style type="text/css">
@@ -68,15 +80,13 @@
     <div id="bighead">Wetterdaten für Falkensee</div>
     Stand: <?php echo date( 'Y-m-d H:i.s', filemtime( '6hrs.txt' ) ); ?>
 </div>
-<script type="text/javascript">
-    // <![CDATA[
+<!--script type="text/javascript">
     if ( google.loader.ClientLocation && google.loader.ClientLocation.address.city ) {
         document.write( '<div id="loc">' );
         document.write( 'Ihr Internetzugriff erfolgt aus:<br /><strong>' + google.loader.ClientLocation.address.city + '</strong>' );
         document.write( '</div>' );
     }
-    // ]]>
-</script>
+</script-->
 
 <ul class="tabs">
     <li><a href="#6hrs">6 Stunden</a></li>
@@ -87,6 +97,9 @@
     <li><a href="#allmonths">alle Monate</a></li>
     <li><a href="#2009">2009</a></li>
     <li><a href="#2010">2010</a></li>
+    <li><a href="#2011">2011</a></li>
+    <li><a href="#2012">2012</a></li>
+    <li><a href="#2016">2016</a></li>
     <li><a href="#wunderground">WUnderground</a></li>
 </ul>
 
@@ -96,19 +109,19 @@
     </div>
 
     <div><!-- letzte 24 Stunden -->
-        <img src="24hrs.png" />
+        <img src="24hrs.svg" />
         <?php include('24hrs.txt'); ?>
-        <img src="rose_24hrs.png" />
+        <img src="rose_24hrs.svg" />
     </div>
 
     <div><!-- letzte 7 Tage -->
-        <img src="7days.png" />
+        <img src="7days.svg" />
         <?php include('7days.txt'); ?>
-        <img src="rose_7days_nights.png" />
+        <img src="rose_7days_nights.svg" />
     </div>
 
     <div><!-- letzte 28 Tage -->
-        <img src="28days.png" />
+        <img src="28days.svg" />
     </div>
 
     <div><!-- letzte 12 Monate -->
@@ -126,36 +139,36 @@
     <div><!-- 2010 -->
         <img src="2010.png" />
     </div>
+
+    <div><!-- 2011 -->
+        <img src="2011.png" />
+    </div>
+
+    <div><!-- 2012 -->
+        <img src="2012.png" />
+    </div>
+
+    <div><!-- 2016 -->
+        <img src="2016.svg" />
+    </div>
+
     <div><!-- WUnderground -->
         <a href="http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=IBRANDEN17&graphspan=week" target="_blank">
             Diese Station bei <em>Weather Underground</em>:<br />
             <img src="http://banners.wunderground.com/cgi-bin/banner/ban/wxBanner?bannertype=pws250_metric&weatherstationcount=IBRANDEN17" />
             <img src="http://banners.wunderground.com/cgi-bin/banner/ban/wxBanner?bannertype=WeatherStationCount&weatherstationcount=IBRANDEN17" height="160" width="163" border="0" alt="Weather Underground PWS IBRANDEN17" />
         </a>
-        <!--object width="600" height="400">
+        <object width="600" height="400">
             <param name="movie" value="http://www.wunderground.com/swf/Rapid_Fire.swf?units=metric&station=IBRANDEN17" />
             <embed src="http://www.wunderground.com/swf/Rapid_Fire.swf?units=metric&station=IBRANDEN17" type="application/x-shockwave-flash" width="600" height="400" />
-        </object-->
+        </object>
     </div>
 </div>
 
 <div id="footer">
-    powered by <a href="http://code.google.com/p/pywws/">pywws</a><br />
-    <a href="http://twitter.com/_FalkenseeDE"><img src="img/Twitter.png" /> Twitter</a> | <a href="http://markus.birth-online.de/">Kontakt / Impressum</a>
+    powered by <a href="https://github.com/jim-easterbrook/pywws">pywws</a><br />
+    <a href="https://twitter.com/_FalkenseeDE"><img src="img/Twitter.png" style="vertical-align: bottom;" /> Twitter</a> | <a rel="author" href="https://plus.google.com/+GottfriedBirth"><img src="http://ssl.gstatic.com/images/icons/gplus-16.png" width="16" height="16" style="vertical-align: bottom;"> Google+</a> | <a href="http://markus.birth-online.de/">Kontakt / Impressum</a>
 </div>
-
-<!-- Piwik -->
-<script type="text/javascript">
-var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.birth-online.de/" : "http://piwik.birth-online.de/");
-document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-</script><script type="text/javascript">
-try {
-var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 11);
-piwikTracker.trackPageView();
-piwikTracker.enableLinkTracking();
-} catch( err ) {}
-</script><noscript><p><img src="http://piwik.birth-online.de/piwik.php?idsite=11" style="border:0" alt=""/></p></noscript>
-<!-- End Piwik Tag -->
 
 </body>
 </html>
