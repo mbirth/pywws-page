@@ -1,0 +1,28 @@
+#timezone local#
+#hourly#
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos##">
+  <channel>
+    <title>Falkensee Wetter - St&uuml;ndliche Berichte</title>
+    <link>http://fks.birth-online.de/</link>
+    <atom:link href="http://fks.birth-online.de/feed_hourly.xml" rel="self" type="application/rss+xml" />
+    <description>St&uuml;ndliche Berichte von einer Amateur-Wetterstation in Falkensee, Brandenburg, Deutschland</description>
+    <ttl>60</ttl>
+    <item>
+      <title>#idx "%A %H:%M %Z"#</title>
+      <geo:lat>52.574</geo:lat>
+      <geo:long>13.128</geo:long>
+      <link>http://fks.birth-online.de/</link>
+      <description>Temperatur: #temp_out "%.1f℃" "-"#
+, Wind: #wind_dir "%s, " "" "winddir_text(x)"#
+#wind_ave "%.0f km/h (durchschn.), " "" "x * 3.6"#
+#wind_gust "%.0f km/h (max.)" "" "x * 3.6"#
+, Luftfeuchte: #hum_out "%d%%"#
+, Regenfall (st&uuml;ndl.) #rain "%.1f mm"#
+, Luftdruck: #rel_pressure "%.0f hPa, "#
+#pressure_trend "%s" "" "pressure_trend_text(x)"#</description>
+      <guid isPermaLink="false">#idx "hourly_%Y_%m_%d_%H_%M_%Z"#</guid>
+      <pubDate>#idx "%a, %d %b %Y %H:%M:%S %z"#</pubDate>
+    </item>
+  </channel>
+</rss>

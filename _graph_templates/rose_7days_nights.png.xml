@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graph>
+  <title>Wind über die letzten 7 Tage (km/h)</title>
+  <fileformat>pngcairo font "arial,8"</fileformat>
+  <duration>hours=24 * 7</duration>
+  <windrose>
+    <title>Tagsüber</title>
+    <source>raw</source>
+    <xcalc>data['idx'].hour &gt;= 9 and data['idx'].hour &lt; 21</xcalc>
+    <ycalc>data['wind_ave'] * 3.6</ycalc>
+    <yrange>31</yrange>
+    <threshold>1, 5, 12, 18, 28, 37, 48</threshold>
+    <colour>0, 6, 7, 2, 5, 3, 4, 1</colour>
+  </windrose>
+  <windrose>
+    <title>Nachts</title>
+    <source>raw</source>
+    <xcalc>data['idx'].hour &lt; 9 or data['idx'].hour &gt;= 21</xcalc>
+    <ycalc>data['wind_ave'] * 3.6</ycalc>
+    <yrange>31</yrange>
+    <threshold>1, 5, 12, 18, 28, 37, 48</threshold>
+    <colour>0, 6, 7, 2, 5, 3, 4, 1</colour>
+  </windrose>
+</graph>

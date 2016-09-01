@@ -1,0 +1,12 @@
+media /opt/pywws/localout/tweet.png
+#hourly#
+#timezone local#
+#roundtime True#
+#idx "%H:%M %Z:"# 🌡#temp_out "%.1f℃" "-"#
+, 🌀  #wind_dir "%s, " "" "winddir_text(x)"#
+#wind_ave "Ø %.0f ㎞/h, " "" "x * 3.6"#
+#wind_gust "🔝 %.0f ㎞/h" "" "x * 3.6"#
+, Luftfeuchte: #hum_out "%d%%"#
+, 💧 (stdl.) #rain "%.1f㎜"#
+, Druck: #rel_pressure "%.0f h㎩, "#
+#pressure_trend "%s" "" "pressure_trend_text(x)"#

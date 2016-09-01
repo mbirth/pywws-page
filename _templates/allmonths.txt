@@ -1,0 +1,34 @@
+<table border="1" rules="all">
+  <tr>
+    <th rowspan="3">Monat</th>
+    <th colspan="6">Temperatur</th>
+    <th rowspan="3">Regenfall</th>
+  </tr>
+  <tr>
+    <th colspan="3">Tag max.</th>
+    <th colspan="3">Nacht min.</th>
+  </tr>
+  <tr>
+    <th>höchstes</th>
+    <th>durchschn.</th>
+    <th>tiefstes</th>
+    <th>höchstes</th>
+    <th>durchschn.</th>
+    <th>tiefstes</th>
+  </tr>
+#timezone local#
+#monthly#
+#loop 10000#
+  <tr>
+    <td class="right">#idx "%B %Y"#</td>
+    <td>#temp_out_max_hi "%.1f ℃"#</td>
+    <td>#temp_out_max_ave "%.1f ℃"#</td>
+    <td>#temp_out_max_lo "%.1f ℃"#</td>
+    <td>#temp_out_min_hi "%.1f ℃"#</td>
+    <td>#temp_out_min_ave "%.1f ℃"#</td>
+    <td>#temp_out_min_lo "%.1f ℃"#</td>
+    <td>#rain "%0.1f mm"#</td>
+  </tr>
+#jump -1#
+#endloop#
+</table>

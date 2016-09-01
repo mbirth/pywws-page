@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graph>
+  <size>600, 800</size>
+  <fileformat>pngcairo font "arial,8"</fileformat>
+  <duration>hours=24</duration>
+  <xtics>2</xtics>
+  <xformat>%H%M</xformat>
+  <dateformat></dateformat>
+  <plot>
+    <yrange>-20, 40</yrange>
+    <source>raw</source>
+    <subplot>
+      <colour>1</colour>
+      <title>Temperatur (℃)</title>
+      <ycalc>data['temp_out']</ycalc>
+    </subplot>
+    <subplot>
+      <colour>3</colour>
+      <ycalc>dew_point(data['temp_out'], data['hum_out'])</ycalc>
+      <title>Taupunkt (℃)</title>
+    </subplot>
+  </plot>
+  <plot>
+    <title>Windgeschwindigkeit (km/h)</title>
+    <yrange>0, 30</yrange>
+    <source>raw</source>
+    <subplot>
+      <colour>4</colour>
+      <ycalc>data['wind_gust'] * 3.6</ycalc>
+      <title>Boe</title>
+    </subplot>
+    <subplot>
+      <colour>3</colour>
+      <ycalc>data['wind_ave'] * 3.6</ycalc>
+      <title>durchschn.</title>
+    </subplot>
+  </plot>
+  <plot>
+    <yrange>0, 5</yrange>
+    <source>hourly</source>
+    <subplot>
+      <colour>5</colour>
+      <style>box</style>
+      <xcalc>data['idx'].replace(minute=30, second=0)</xcalc>
+      <ycalc>data['rain']</ycalc>
+      <title>Tägl. Regenfall (mm)</title>
+    </subplot>
+  </plot>
+  <plot>
+    <source>hourly</source>
+    <subplot>
+      <colour>2</colour>
+      <ycalc>data['rel_pressure']</ycalc>
+      <title>Luftdruck (hPa)</title>
+    </subplot>
+    <yrange>960, 1050</yrange>
+  </plot>
+</graph>
