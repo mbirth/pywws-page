@@ -1,0 +1,3 @@
+
+#xmllint -format -xinclude %b
+
