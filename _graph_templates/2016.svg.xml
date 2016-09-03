@@ -3,7 +3,7 @@
   <size>600, 600</size>
   <fileformat>svg font "arial,10"</fileformat>
   <start>year=2016, month=1, day=1, hour=0</start>
-  <stop>year=2016, month=12, day=31, hour=0</stop>
+  <stop>year=2016, month=12, day=31, hour=23</stop>
   <xformat>%b</xformat>
   <xlabel>%Y</xlabel>
   <dateformat></dateformat>
@@ -28,7 +28,7 @@
     </subplot>
     <subplot>
       <style>box</style>
-      <colour>rgb "#607D8B"</colour>
+      <colour>rgb "#607d8b"</colour>
       <title>Mittleres Nachtminimum</title>
       <xcalc>data['start'] + timedelta(days=7)</xcalc>
       <ycalc>data['temp_out_min_ave']</ycalc>
@@ -45,11 +45,11 @@
     <yrange>0, 120</yrange>
     <source>monthly</source>
     <subplot>
-      <colour>rgb "#2196F3"</colour>
+      <colour>rgb "#2196f3"</colour>
       <style>box</style>
       <xcalc>data['start'] + timedelta(days=14)</xcalc>
       <ycalc>data['rain']</ycalc>
-      <title>Monatl. Regenfall (mm)</title>
+      <title>Monatl. Regenfall (㎜)</title>
     </subplot>
   </plot>
 </graph>
