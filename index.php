@@ -153,15 +153,25 @@
     </div>
 
     <div><!-- WUnderground -->
-        <a href="http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=IBRANDEN17&graphspan=week" target="_blank">
-            Diese Station bei <em>Weather Underground</em>:<br />
-            <img src="http://banners.wunderground.com/cgi-bin/banner/ban/wxBanner?bannertype=pws250_metric&weatherstationcount=IBRANDEN17" />
-            <img src="http://banners.wunderground.com/cgi-bin/banner/ban/wxBanner?bannertype=WeatherStationCount&weatherstationcount=IBRANDEN17" height="160" width="163" border="0" alt="Weather Underground PWS IBRANDEN17" />
-        </a>
-        <object width="600" height="400">
-            <param name="movie" value="http://www.wunderground.com/swf/Rapid_Fire.swf?units=metric&station=IBRANDEN17" />
-            <embed src="http://www.wunderground.com/swf/Rapid_Fire.swf?units=metric&station=IBRANDEN17" type="application/x-shockwave-flash" width="600" height="400" />
-        </object>
+    	<p>
+	        <a href="http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=IBRANDEN17&amp;graphspan=week" target="_blank">
+	            Diese Station bei <em>Weather Underground</em>:<br />
+	            <img src="http://banners.wunderground.com/cgi-bin/banner/ban/wxBanner?bannertype=pws250_metric&amp;weatherstationcount=IBRANDEN17" />
+	            <img src="http://banners.wunderground.com/cgi-bin/banner/ban/wxBanner?bannertype=WeatherStationCount&amp;weatherstationcount=IBRANDEN17" height="160" width="163" border="0" alt="Weather Underground PWS IBRANDEN17" />
+
+
+	        </a>
+	        <object width="290" height="130">
+	        	<param name="movie" value="http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=IBRANDEN17&amp;freq=&amp;units=metric&amp;lang=EN" />
+	        	<embed src="http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=IBRANDEN17&amp;freq=&amp;units=metric&amp;lang=EN" type="application/x-shockwave-flash" width="290" height="130" />
+	    	</object>
+    	</p>
+    	<p>
+	        <object width="600" height="400">
+	            <param name="movie" value="http://www.wunderground.com/swf/Rapid_Fire.swf?units=metric&amp;station=IBRANDEN17" />
+	            <embed src="http://www.wunderground.com/swf/Rapid_Fire.swf?units=metric&amp;station=IBRANDEN17" type="application/x-shockwave-flash" width="600" height="400" />
+	        </object>
+	    </p>
     </div>
 </div>
 
@@ -169,6 +179,20 @@
     powered by <a href="https://github.com/jim-easterbrook/pywws">pywws</a><br />
     <a href="https://twitter.com/_FalkenseeDE"><img src="img/Twitter.png" style="vertical-align: bottom;" /> Twitter</a> | <a rel="author" href="https://plus.google.com/+GottfriedBirth"><img src="http://ssl.gstatic.com/images/icons/gplus-16.png" width="16" height="16" style="vertical-align: bottom;"> Google+</a> | <a href="http://markus.birth-online.de/">Kontakt / Impressum</a>
 </div>
+
+<!-- BEGIN Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-259868-13', 'auto');
+  ga('require', 'displayfeatures');
+  ga('require', 'linkid');
+  ga('send', 'pageview');
+</script>
+<!-- END Google Analytics -->
 
 </body>
 </html>
