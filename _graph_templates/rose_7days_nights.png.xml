@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <graph xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Wind über die letzten 7 Tage (km/h)</title>
-  <fileformat>pngcairo font "arial,8"</fileformat>
+  <xi:include href="includes/format_png.xml" parse="xml" />
   <duration>hours=24 * 7</duration>
   <windrose>
     <title>Tagsüber</title>

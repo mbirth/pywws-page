@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <graph xmlns:xi="http://www.w3.org/2001/XInclude">
-  <fileformat>svg font "arial,10"</fileformat>
+  <xi:include href="includes/format_svg.xml" parse="xml" />
   <title>Wind über die letzten 24h (km/h)</title>
   <duration>hours=24</duration>
   <windrose>
