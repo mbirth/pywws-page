@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <graph xmlns:xi="http://www.w3.org/2001/XInclude">
   <size>400, 220</size>
-  <xi:include href="includes/format_png.xml" parse="xml" />
+  <xi:include href="includes/format_png8.xml" parse="xml" />
   <lmargin>6</lmargin>
   <rmargin>7</rmargin>
   <duration>hours=24</duration>
