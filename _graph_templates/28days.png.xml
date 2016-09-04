@@ -1,63 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <graph xmlns:xi="http://www.w3.org/2001/XInclude">
   <size>600, 800</size>
-  <fileformat>pngcairo font "arial,8"</fileformat>
+  <xi:include href="includes/format_png.xml" parse="xml" />
   <duration>weeks=4</duration>
   <xformat>%Y/%m/%d</xformat>
   <dateformat></dateformat>
-  <plot>
-    <title>Temperatur (℃)</title>
-    <yrange>-20, 45</yrange>
-    <source>daily</source>
-    <boxwidth>boxwidth / 2</boxwidth>
-    <subplot>
-      <style>box</style>
-      <colour>1</colour>
-      <title>Tagesmaximum</title>
-      <xcalc>data['start'] + timedelta(hours=18)</xcalc>
-      <ycalc>data['temp_out_max']</ycalc>
-    </subplot>
-    <subplot>
-      <style>box</style>
-      <colour>3</colour>
-      <title>Nachtminimum</title>
-      <xcalc>data['start'] + timedelta(hours=6)</xcalc>
-      <ycalc>data['temp_out_min']</ycalc>
-    </subplot>
-  </plot>
-  <plot>
-    <title>Windgeschwindigkeit (km/h)</title>
-    <yrange>0, 30</yrange>
-    <source>hourly</source>
-    <subplot>
-      <colour>4</colour>
-      <ycalc>data['wind_gust'] * 3.6</ycalc>
-      <title>Boe</title>
-    </subplot>
-    <subplot>
-      <colour>3</colour>
-      <ycalc>data['wind_ave'] * 3.6</ycalc>
-      <title>durchschn.</title>
-    </subplot>
-  </plot>
-  <plot>
-    <yrange>0, 30</yrange>
-    <source>daily</source>
-    <subplot>
-      <colour>5</colour>
-      <style>box</style>
-      <xcalc>data['start'] + timedelta(hours=12)</xcalc>
-      <ycalc>data['rain']</ycalc>
-      <title>Tägl. Regenfall (mm)</title>
-    </subplot>
-  </plot>
-  <plot>
-    <source>hourly</source>
-    <subplot>
-      <colour>2</colour>
-      <ycalc>data['rel_pressure']</ycalc>
-      <title>Luftdruck (hPa)</title>
-    </subplot>
-    <yrange>960, 1050</yrange>
-  </plot>
+  <xi:include href="includes/daily_temp_maxmin_bar.xml" parse="xml" />
+  <xi:include href="includes/hourly_wind_gust_line.xml" parse="xml" />
+  <xi:include href="includes/daily_rain_bar.xml" parse="xml" />
+  <xi:include href="includes/hourly_press_line.xml" parse="xml" />
 </graph>

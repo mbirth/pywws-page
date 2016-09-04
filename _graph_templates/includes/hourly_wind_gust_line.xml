@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <plot>
+    <title>Windgeschwindigkeit (km/h)</title>
+    <yrange>0, 30</yrange>
+    <source>hourly</source>
+    <subplot>
+      <colour>4</colour>
+      <ycalc>data['wind_gust'] * 3.6</ycalc>
+      <title>Boe</title>
+    </subplot>
+    <subplot>
+      <colour>3</colour>
+      <ycalc>data['wind_ave'] * 3.6</ycalc>
+      <title>durchschn.</title>
+    </subplot>
+  </plot>

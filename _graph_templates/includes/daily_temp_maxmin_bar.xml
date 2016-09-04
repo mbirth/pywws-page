@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <plot>
+    <title>Temperatur (℃)</title>
+    <yrange>-20, 45</yrange>
+    <source>daily</source>
+    <boxwidth>boxwidth / 2</boxwidth>
+    <subplot>
+      <style>box</style>
+      <colour>1</colour>
+      <title>Tagesmaximum</title>
+      <xcalc>data['start'] + timedelta(hours=18)</xcalc>
+      <ycalc>data['temp_out_max']</ycalc>
+    </subplot>
+    <subplot>
+      <style>box</style>
+      <colour>3</colour>
+      <title>Nachtminimum</title>
+      <xcalc>data['start'] + timedelta(hours=6)</xcalc>
+      <ycalc>data['temp_out_min']</ycalc>
+    </subplot>
+  </plot>
