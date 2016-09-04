@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <plot>
+    <yrange>0, 5</yrange>
+    <source>hourly</source>
+    <subplot>
+      <colour>rgb "#2196F3"</colour>
+      <style>box</style>
+      <xcalc>data['idx'].replace(minute=30, second=0)</xcalc>
+      <ycalc>data['rain']</ycalc>
+      <title>Tägl. Regenfall (mm)</title>
+    </subplot>
+  </plot>

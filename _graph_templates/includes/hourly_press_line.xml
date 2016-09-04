@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <plot>
+    <source>hourly</source>
+    <subplot>
+      <colour>2</colour>
+      <ycalc>data['rel_pressure']</ycalc>
+      <title>Luftdruck (hPa)</title>
+    </subplot>
+    <yrange>960, 1050</yrange>
+  </plot>
