@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<graph>
+<graph xmlns:xi="http://www.w3.org/2001/XInclude">
   <size>600, 800</size>
-  <fileformat>svg font "arial,10"</fileformat>
+  <xi:include href="includes/format_svg.xml" parse="xml" />
   <duration>hours=24</duration>
   <xtics>2</xtics>
   <xformat>%H%M</xformat>
