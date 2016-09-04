@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <plot>
+    <bmargin>1.6</bmargin>
+    <title>Niederschlag (㎜)</title>
+    <yrange>0, 6</yrange>
+    <y2range>0, 30</y2range>
+    <ylabel>stündl.</ylabel>
+    <y2label>gesamt</y2label>
+    <source>hourly</source>
+    <subplot>
+      <colour>rgb "#2196F3"</colour>
+      <style>box</style>
+      <xcalc>data['idx'].replace(minute=30, second=0)</xcalc>
+      <ycalc>data['rain']</ycalc>
+      <title>stündl.</title>
+    </subplot>
+    <subplot>
+      <colour>rgb "#283593"</colour>
+      <axes>x1y2</axes>
+      <ycalc>data['rain'] + last_ycalc</ycalc>
+      <title>gesamt</title>
+    </subplot>
+  </plot>

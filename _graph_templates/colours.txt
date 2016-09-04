@@ -5,8 +5,8 @@ rgb "#b71c1c" - Day max. temp. (Red 900)
 rgb "#607d8b" - Night temperature (Blue-Grey 500)
 rgb "#263238" - Night min. temp. (Blue-Grey 900)
 rgb "#2196f3" - Rain (Blue 500)
+rgb "#283593" - Rain overall (Indigo 800)
 
 Untested:
 rgb "#ba68c8" - Dewpoint (Purple 300)
 rgb "#4caf50" - Wind (Green 500)
-
