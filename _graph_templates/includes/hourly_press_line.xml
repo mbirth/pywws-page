@@ -4,7 +4,7 @@
     <subplot>
       <colour>2</colour>
       <ycalc>data['rel_pressure']</ycalc>
-      <title>Luftdruck (hPa)</title>
+      <title>Luftdruck (㍱)</title>
     </subplot>
     <yrange>960, 1050</yrange>
   </plot>

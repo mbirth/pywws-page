@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <plot>
+    <yrange>-20, 40</yrange>
+    <source>hourly</source>
+    <subplot>
+      <colour>1</colour>
+      <title>Temperatur (℃)</title>
+      <ycalc>data['temp_out']</ycalc>
+    </subplot>
+    <subplot>
+      <colour>3</colour>
+      <ycalc>dew_point(data['temp_out'], data['hum_out'])</ycalc>
+      <title>Taupunkt (℃)</title>
+    </subplot>
+  </plot>

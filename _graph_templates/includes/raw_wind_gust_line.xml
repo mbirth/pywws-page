@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
   <plot>
-    <title>Windgeschwindigkeit (km/h)</title>
+    <title>Windgeschwindigkeit (㎞/h)</title>
     <yrange>0, 30</yrange>
     <source>raw</source>
     <subplot>
