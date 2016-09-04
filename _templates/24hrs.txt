@@ -22,17 +22,17 @@
   </tr>
   <tr>
     <th class="right">Gesamter Regenfall</th>
-    <td>#rain "%.1f mm"#</td>
+    <td>#rain "%.1f ㎜"#</td>
     <td colspan="2"></td>
   </tr>
   <tr>
     <th class="right">Durchschn. Windgeschwindigkeit</th>
-    <td>#wind_ave "%.0f km/h" "-" "x * 3.6"#</td>
+    <td>#wind_ave "%.0f ㎞/h" "-" "x * 3.6"#</td>
     <td colspan="2"></td>
   </tr>
   <tr>
     <th class="right">Höchste Boe-Geschwindigkeit</th>
-    <td>#wind_gust "%.0f km/h" "-" "x * 3.6"#</td>
+    <td>#wind_gust "%.0f ㎞/h" "-" "x * 3.6"#</td>
     <td>#wind_gust_t "%Y-%m-%d</td><td>%H%M %Z"#</td>
   </tr>
 #idx "  <tr><th colspan=\"4\">&nbsp;</th></tr>" "" "[x, None][loop_count==1]"#

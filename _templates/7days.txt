@@ -21,9 +21,9 @@
     <td>#temp_out_max "%.1f ℃"#</td>
     <td>#temp_out_min "%.1f ℃"#</td>
     <td>#wind_dir "%s" "-" "winddir_text(x)"#</td>
-    <td>#wind_ave "%.0f km/h" "" "x * 3.6"#</td>
-    <td>#wind_gust "%.0f km/h" "" "x * 3.6"#</td>
-    <td>#rain "%0.1f mm"#</td>
+    <td>#wind_ave "%.0f ㎞/h" "" "x * 3.6"#</td>
+    <td>#wind_gust "%.0f ㎞/h" "" "x * 3.6"#</td>
+    <td>#rain "%0.1f ㎜"#</td>
   </tr>
 #jump 1#
 #endloop#

@@ -27,7 +27,7 @@
     <td>#temp_out_min_hi "%.1f ℃"#</td>
     <td>#temp_out_min_ave "%.1f ℃"#</td>
     <td>#temp_out_min_lo "%.1f ℃"#</td>
-    <td>#rain "%0.1f mm"#</td>
+    <td>#rain "%0.1f ㎜"#</td>
   </tr>
 #jump -1#
 #endloop#

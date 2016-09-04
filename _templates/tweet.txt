@@ -8,5 +8,5 @@ media /opt/pywws/localout/tweet.png
 #wind_gust "🔝 %.0f ㎞/h" "" "x * 3.6"#
 , Luftfeuchte: #hum_out "%d%%"#
 , 💧 (stdl.) #rain "%.1f㎜"#
-, Druck: #rel_pressure "%.0f h㎩, "#
+, Druck: #rel_pressure "%.0f ㍱, "#
 #pressure_trend "%s" "" "pressure_trend_text(x)"#
