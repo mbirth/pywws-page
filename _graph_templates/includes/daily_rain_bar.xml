@@ -3,7 +3,7 @@
     <yrange>0, 30</yrange>
     <source>daily</source>
     <subplot>
-      <colour>rgb "#2196F3"</colour>
+      <colour>rgb "#2196f3"</colour>
       <style>box</style>
       <xcalc>data['start'] + timedelta(hours=12)</xcalc>
       <ycalc>data['rain']</ycalc>
