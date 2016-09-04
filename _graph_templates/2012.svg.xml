@@ -7,6 +7,6 @@
   <xformat>%b</xformat>
   <xlabel>%Y</xlabel>
   <dateformat></dateformat>
-  <xi:include href="includes/year_temp.xml" parse="xml" />
-  <xi:include href="includes/year_rain.xml" parse="xml" />
+  <xi:include href="includes/monthly_temp_avg_bar.xml" parse="xml" />
+  <xi:include href="includes/monthly_rain_bar.xml" parse="xml" />
 </graph>
