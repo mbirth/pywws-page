@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <plot>
+    <title>Temperatur (℃)</title>
+    <yrange>-20, 50</yrange>
+    <source>monthly</source>
+    <boxwidth>boxwidth / 2</boxwidth>
+    <subplot>
+      <style>box</style>
+      <colour>rgb "#f44336"</colour>
+      <title>Mittleres Tagesmaximum</title>
+      <xcalc>data['start'] + timedelta(days=20)</xcalc>
+      <ycalc>data['temp_out_max_ave']</ycalc>
+    </subplot>
+    <subplot>
+      <style>+</style>
+      <colour>rgb "#b71c1c"</colour>
+      <title>Höchstes Tagesmaximum</title>
+      <xcalc>data['temp_out_max_hi_t']</xcalc>
+      <ycalc>data['temp_out_max_hi']</ycalc>
+    </subplot>
+    <subplot>
+      <style>box</style>
+      <colour>rgb "#607d8b"</colour>
+      <title>Mittleres Nachtminimum</title>
+      <xcalc>data['start'] + timedelta(days=7)</xcalc>
+      <ycalc>data['temp_out_min_ave']</ycalc>
+    </subplot>
+    <subplot>
+      <style>+</style>
+      <colour>rgb "#263238"</colour>
+      <title>Tiefstes Nachtminimum</title>
+      <xcalc>data['temp_out_min_lo_t']</xcalc>
+      <ycalc>data['temp_out_min_lo']</ycalc>
+    </subplot>
+  </plot>
