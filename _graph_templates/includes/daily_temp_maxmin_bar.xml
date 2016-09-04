@@ -6,14 +6,14 @@
     <boxwidth>boxwidth / 2</boxwidth>
     <subplot>
       <style>box</style>
-      <colour>1</colour>
+      <colour>rgb "#f44336"</colour>
       <title>Tagesmaximum</title>
       <xcalc>data['start'] + timedelta(hours=18)</xcalc>
       <ycalc>data['temp_out_max']</ycalc>
     </subplot>
     <subplot>
       <style>box</style>
-      <colour>3</colour>
+      <colour>rgb "#607d8b"</colour>
       <title>Nachtminimum</title>
       <xcalc>data['start'] + timedelta(hours=6)</xcalc>
       <ycalc>data['temp_out_min']</ycalc>
