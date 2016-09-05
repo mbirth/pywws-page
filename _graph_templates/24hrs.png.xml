@@ -8,6 +8,6 @@
   <dateformat></dateformat>
   <xi:include href="includes/raw_temp_dew_line.xml" parse="xml" />
   <xi:include href="includes/raw_wind_gust_line.xml" parse="xml" />
-  <xi:include href="includes/hourly_rain_bar.xml" parse="xml" />
+  <xi:include href="includes/hourly_rain_sum_dual.xml" parse="xml" />
   <xi:include href="includes/hourly_press_line.xml" parse="xml" />
 </graph>

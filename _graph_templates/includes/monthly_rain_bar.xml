@@ -7,6 +7,6 @@
       <style>box</style>
       <xcalc>data['start'] + timedelta(days=14)</xcalc>
       <ycalc>data['rain']</ycalc>
-      <title>Monatl. Regenfall (㎜)</title>
+      <title>Monatl. Niederschlag (㎜)</title>
     </subplot>
   </plot>

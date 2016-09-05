@@ -7,6 +7,6 @@
       <style>box</style>
       <xcalc>data['start'] + timedelta(hours=12)</xcalc>
       <ycalc>data['rain']</ycalc>
-      <title>Tägl. Regenfall (㎜)</title>
+      <title>Tägl. Niederschlag (㎜)</title>
     </subplot>
   </plot>

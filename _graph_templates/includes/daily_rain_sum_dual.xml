@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
   <plot>
     <title>Niederschlag (㎜)</title>
-    <yrange>0, 6</yrange>
-    <y2range>0, 30</y2range>
-    <ylabel>stündlich</ylabel>
+    <yrange>0, 30</yrange>
+    <y2range>0, 120</y2range>
+    <ylabel>täglich</ylabel>
     <y2label>gesamt</y2label>
-    <source>hourly</source>
+    <source>daily</source>
     <subplot>
       <colour>rgb "#2196f3"</colour>
       <style>box</style>
-      <xcalc>data['idx'].replace(minute=30, second=0)</xcalc>
+      <xcalc>data['start'] + timedelta(hours=12)</xcalc>
       <ycalc>data['rain']</ycalc>
-      <title>stündlich</title>
+      <title>täglich</title>
     </subplot>
     <subplot>
       <colour>rgb "#283593"</colour>

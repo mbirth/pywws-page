@@ -7,6 +7,6 @@
       <style>box</style>
       <xcalc>data['idx'].replace(minute=30, second=0)</xcalc>
       <ycalc>data['rain']</ycalc>
-      <title>Regenfall (㎜)</title>
+      <title>Niederschlag (㎜)</title>
     </subplot>
   </plot>
