@@ -15,8 +15,8 @@
       <link>http://fks.birth-online.de/</link>
       <description>Temperatur: #temp_out "%.1f℃" "-"#
 , Wind: #wind_dir "%s, " "" "winddir_text(x)"#
-#wind_ave "%.0f ㎞/h (durchschn.), " "" "x * 3.6"#
-#wind_gust "%.0f ㎞/h (max.)" "" "x * 3.6"#
+#wind_ave "%.0f ㎞/h (durchschn.), " "" "wind_kmph(x)"#
+#wind_gust "%.0f ㎞/h (max.)" "" "wind_kmph(x)"#
 , Luftfeuchte: #hum_out "%d%%"#
 , Regenfall (stündl.) #rain "%.1f ㎜"#
 , Luftdruck: #rel_pressure "%.0f ㍱, "#

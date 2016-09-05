@@ -5,12 +5,12 @@
     <source>raw</source>
     <subplot>
       <colour>4</colour>
-      <ycalc>data['wind_gust'] * 3.6</ycalc>
+      <ycalc>wind_kmph(data['wind_gust'])</ycalc>
       <title>Boe</title>
     </subplot>
     <subplot>
       <colour>3</colour>
-      <ycalc>data['wind_ave'] * 3.6</ycalc>
+      <ycalc>wind_kmph(data['wind_ave'])</ycalc>
       <title>durchschn.</title>
     </subplot>
   </plot>

@@ -3,7 +3,7 @@
 [
 [ "timestamp", "temp_out_c", "hum_out_p", "wind_dir", "wind_ave_kmh", "wind_gust_kmh", "rain_mm", "abs_pressure_hpa" ]
 #loop 26298#
-,[#idx#,#temp_out "%.1f"#,#hum_out "%d"#,#wind_dir "%0d" "99"#,#wind_ave "%.0f" "" "x * 3.6"#,#wind_gust "%.0f" "" "x * 3.6"#,#rain "%0.1f"#,#abs_pressure "%.0f"#]
+,[#idx#,#temp_out "%.1f"#,#hum_out "%d"#,#wind_dir "%0d" "99"#,#wind_ave "%.0f" "" "wind_kmph(x)"#,#wind_gust "%.0f" "" "wind_kmph(x)"#,#rain "%0.1f"#,#abs_pressure "%.0f"#]
 #jump -1#
 #endloop#
 ]
