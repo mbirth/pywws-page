@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <plot>
+    <title>Niederschlag (㎜)</title>
+    <yrange>0, 120</yrange>
+    <y2range>0, 360</y2range>
+    <ylabel>monatlich</ylabel>
+    <y2label>gesamt</y2label>
+    <source>monthly</source>
+    <subplot>
+      <colour>rgb "#2196f3"</colour>
+      <style>box</style>
+      <xcalc>data['start'] + timedelta(days=14)</xcalc>
+      <ycalc>data['rain']</ycalc>
+      <title>monatlich</title>
+    </subplot>
+    <subplot>
+      <colour>rgb "#283593"</colour>
+      <axes>x1y2</axes>
+      <ycalc>data['rain'] + last_ycalc</ycalc>
+      <title>gesamt</title>
+    </subplot>
+  </plot>
