@@ -2,6 +2,7 @@
   <plot>
     <title>Temperatur (℃)</title>
     <yrange>-20, 45</yrange>
+    <grid>ytics</grid>
     <source>daily</source>
     <boxwidth>boxwidth / 2</boxwidth>
     <subplot>

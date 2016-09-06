@@ -2,6 +2,7 @@
   <plot>
     <title>Temperatur (℃)</title>
     <yrange>-20, 50</yrange>
+    <grid>ytics</grid>
     <source>monthly</source>
     <boxwidth>boxwidth / 2</boxwidth>
     <subplot>

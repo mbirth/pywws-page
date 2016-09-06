@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
   <plot>
     <source>hourly</source>
+    <yrange>960, 1050</yrange>
+    <grid>ytics</grid>
     <subplot>
       <colour>2</colour>
       <ycalc>data['rel_pressure']</ycalc>
       <title>Luftdruck (㍱)</title>
     </subplot>
-    <yrange>960, 1050</yrange>
   </plot>

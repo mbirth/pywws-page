@@ -2,6 +2,7 @@
   <plot>
     <title>Windgeschwindigkeit (㎞/h)</title>
     <yrange>0, 30</yrange>
+    <grid>ytics</grid>
     <source>hourly</source>
     <subplot>
       <colour>4</colour>

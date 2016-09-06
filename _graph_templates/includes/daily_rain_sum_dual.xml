@@ -3,6 +3,7 @@
     <title>Niederschlag (㎜)</title>
     <yrange>0, 30</yrange>
     <y2range>0, 120</y2range>
+    <grid>ytics</grid>
     <ylabel>täglich</ylabel>
     <y2label>gesamt</y2label>
     <source>daily</source>

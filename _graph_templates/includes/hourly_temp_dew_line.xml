@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
   <plot>
     <yrange>-20, 40</yrange>
+    <grid>ytics</grid>
     <source>hourly</source>
     <subplot>
       <colour>1</colour>
