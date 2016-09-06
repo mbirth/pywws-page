@@ -2,7 +2,7 @@
   <plot>
     <title>Niederschlag (㎜)</title>
     <yrange>0, 120</yrange>
-    <y2range>0, 360</y2range>
+    <y2range>0, 480</y2range>
     <ylabel>monatlich</ylabel>
     <y2label>gesamt</y2label>
     <source>monthly</source>
