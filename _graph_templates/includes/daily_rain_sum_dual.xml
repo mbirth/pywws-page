@@ -16,6 +16,7 @@
     <subplot>
       <colour>rgb "#283593"</colour>
       <axes>x1y2</axes>
+      <xcalc>data['start'] + timedelta(hours=12)</xcalc>
       <ycalc>data['rain'] + last_ycalc</ycalc>
       <title>gesamt</title>
     </subplot>
