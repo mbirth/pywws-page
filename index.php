@@ -57,6 +57,12 @@
             text-align: center;
         }
 
+        #footer img {
+        	width: 16px;
+        	height: 16px;
+        	vertical-align: bottom;
+        }
+
         A {
             text-decoration: none;
         }
@@ -177,7 +183,7 @@
 
 <div id="footer">
     powered by <a href="https://github.com/jim-easterbrook/pywws">pywws</a><br />
-    <a href="https://twitter.com/_FalkenseeDE"><img src="img/Twitter.png" style="vertical-align: bottom;" /> Twitter</a> | <a rel="author" href="https://plus.google.com/+GottfriedBirth"><img src="http://ssl.gstatic.com/images/icons/gplus-16.png" width="16" height="16" style="vertical-align: bottom;"> Google+</a> | <a href="http://markus.birth-online.de/">Kontakt / Impressum</a>
+    <a href="https://twitter.com/_FalkenseeDE"><img src="img/Twitter.png"/> Twitter</a> | <a rel="author" href="https://plus.google.com/+GottfriedBirth"><img src="//ssl.gstatic.com/images/icons/gplus-16.png"/> Google+</a> | <a href="https://github.com/mbirth/pywws-page"><img src="//github.com/favicon.ico"/> GitHub</a> | <a href="http://markus.birth-online.de/">Kontakt / Impressum</a>
 </div>
 
 <!-- BEGIN Google Analytics -->
