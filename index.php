@@ -139,19 +139,19 @@
     </div>
 
     <div><!-- 2009 -->
-        <img src="2009.png" />
+        <img src="2009.svg" />
     </div>
 
     <div><!-- 2010 -->
-        <img src="2010.png" />
+        <img src="2010.svg" />
     </div>
 
     <div><!-- 2011 -->
-        <img src="2011.png" />
+        <img src="2011.svg" />
     </div>
 
     <div><!-- 2012 -->
-        <img src="2012.png" />
+        <img src="2012.svg" />
     </div>
 
     <div><!-- 2016 -->
