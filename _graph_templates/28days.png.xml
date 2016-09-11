@@ -5,7 +5,7 @@
   <duration>weeks=4</duration>
   <xformat>%Y/%m/%d</xformat>
   <dateformat></dateformat>
-  <xi:include href="includes/daily_temp_maxmin_bar.xml" parse="xml" />
+  <xi:include href="includes/daily_temp_candle.xml" parse="xml" />
   <xi:include href="includes/hourly_wind_gust_line.xml" parse="xml" />
   <xi:include href="includes/daily_rain_sum_dual.xml" parse="xml" />
   <xi:include href="includes/hourly_press_line.xml" parse="xml" />

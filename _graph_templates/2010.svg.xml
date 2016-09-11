@@ -2,8 +2,8 @@
 <graph xmlns:xi="http://www.w3.org/2001/XInclude">
   <size>600, 600</size>
   <xi:include href="includes/format_svg.xml" parse="xml" />
-  <start>year=2012, month=1, day=1, hour=0</start>
-  <stop>year=2012, month=12, day=31, hour=23</stop>
+  <start>year=2010, month=1, day=1, hour=0</start>
+  <stop>year=2010, month=12, day=31, hour=23</stop>
   <xformat>%b</xformat>
   <xlabel>%Y</xlabel>
   <dateformat></dateformat>

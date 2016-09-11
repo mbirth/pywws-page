@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <plot>
+    <title>Temperatur (℃)</title>
+    <yrange>-20, 50</yrange>
+    <grid>ytics</grid>
+    <source>daily</source>
+    <subplot>
+      <!-- Candlesticks plot with whiskerbars, line width: 2, whiskerbar width: 50% -->
+      <style>candlesticks 2</style>
+      <colour>rgb "#f44336"</colour>
+      <xcalc>data['start'] + timedelta(hours=12)</xcalc>
+      <!-- 4 values as tuple in that order: NightAvg, NightMin, DayMax, DayAvg -->
+      <ycalc>(data['temp_out_min'], data['temp_out_min'], data['temp_out_max'], data['temp_out_max'])</ycalc>
+    </subplot>
+    <subplot>
+        <!-- This is the median line as per gnuplot documentation -->
+        <style>candlesticks 1.5</style>
+        <colour>rgb "#607d8b"</colour>
+        <xcalc>data['start'] + timedelta(hours=12)</xcalc>
+        <!-- 4 times the same value as we don't want a bar but only a line -->
+        <ycalc>(data['temp_out_ave'], data['temp_out_ave'], data['temp_out_ave'], data['temp_out_ave'])</ycalc>
+    </subplot>
+</plot>
+
