@@ -9,6 +9,6 @@
   <xformat>%H%M</xformat>
   <xlabel></xlabel>
   <dateformat></dateformat>
-  <xi:include href="includes/raw_temp_dew_line.xml" parse="xml" />
+  <xi:include href="includes/raw_temp_dew_feel_line.xml" parse="xml" />
   <xi:include href="includes/hourly_rain_sum_dual.xml" parse="xml" />
 </graph>
