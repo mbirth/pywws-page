@@ -2,20 +2,24 @@
   <col />
   <col />
   <col align="char" char="," />
+  <col align="char" char="," />
   <col />
   <col />
   <col align="char" char="h" />
   <col align="char" char="h" />
   <col align="char" char="," />
   <col align="char" char="," />
+  <col align="char" char="m" />
   <col />
   <tr>
     <th colspan="2" rowspan="2">Datum &amp; Zeit</th>
     <th rowspan="2">Temp</th>
+    <th rowspan="2">Gefühlt</th>
     <th rowspan="2">Feuchte</th>
     <th colspan="3">Wind</th>
     <th rowspan="2">Regen</th>
     <th rowspan="2">Luftdruck</th>
+    <th rowspan="2"><a href="https://de.wikipedia.org/wiki/Kondensationsniveau">KKN</a></th>
     <th rowspan="2">Vorhersage</th>
   </tr>
   <tr>
@@ -31,12 +35,14 @@
     <td>#idx "%Y-%m-%d" "" "[None, x][x.hour == 0 or loop_count == 7]"#</td>
     <td>#idx "%H%M %Z"#</td>
     <td>#temp_out "%.1f ℃"#</td>
+    <td>#calc "apparent_temp(data['temp_out'], data['hum_out'], data['wind_ave'])" "%.1f ℃"#</td>
     <td>#hum_out "%d%%"#</td>
     <td>#wind_dir "%s" "-" "winddir_text(x)"#</td>
     <td>#wind_ave "%.0f ㎞/h" "" "wind_kmph(x)"#</td>
     <td>#wind_gust "%.0f ㎞/h" "" "wind_kmph(x)"#</td>
     <td>#rain "%0.1f ㎜"#</td>
     <td>#rel_pressure "%.0f ㍱"#, #pressure_trend "%s" "" "pressure_trend_text(x)"#</td>
+    <td>#calc "cloud_base(data['temp_out'], data['hum_out'])" "%.0f m"#</td>
     <td>#calc "Zambretti(params, data)"#</td>
   </tr>
 #jump 1#
