@@ -1,13 +1,14 @@
 <table border="1" rules="all">
   <col />
   <col />
-  <col align="char" char="." />
-  <col />
-  <col />
-  <col align="char" char="m" />
-  <col align="char" char="m" />
-  <col align="char" char="." />
   <col align="char" char="," />
+  <col />
+  <col />
+  <col align="char" char="h" />
+  <col align="char" char="h" />
+  <col align="char" char="," />
+  <col align="char" char="," />
+  <col />
   <tr>
     <th colspan="2" rowspan="2">Datum &amp; Zeit</th>
     <th rowspan="2">Temp</th>
