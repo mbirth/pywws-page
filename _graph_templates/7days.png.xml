@@ -8,5 +8,5 @@
   <xi:include href="includes/hourly_temp_dew_feel_line.xml" parse="xml" />
   <xi:include href="includes/hourly_wind_gust_line.xml" parse="xml" />
   <xi:include href="includes/hourly_rain_sum_dual.xml" parse="xml" />
-  <xi:include href="includes/hourly_press_line.xml" parse="xml" />
+  <xi:include href="includes/hourly_baro_line.xml" parse="xml" />
 </graph>
