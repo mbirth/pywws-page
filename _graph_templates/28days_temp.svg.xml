@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graph xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="includes/size_single.xml" parse="xml" />
+  <xi:include href="includes/format_svg.xml" parse="xml" />
+  <duration>weeks=4</duration>
+  <xformat>%Y/%m/%d</xformat>
+  <xlabel></xlabel>
+  <dateformat></dateformat>
+  <xi:include href="includes/daily_temp_candle.xml" parse="xml" />
+</graph>
