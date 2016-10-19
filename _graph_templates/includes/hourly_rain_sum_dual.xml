@@ -5,7 +5,7 @@
     <y2range>0, 30</y2range>
     <grid>ytics</grid>
     <ylabel>stündlich</ylabel>
-    <y2label>gesamt</y2label>
+    <!--y2label>gesamt</y2label-->
     <source>hourly</source>
     <subplot>
       <colour>rgb "#2196f3"</colour>

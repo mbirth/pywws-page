@@ -5,7 +5,7 @@
     <y2range>0, 120</y2range>
     <grid>ytics</grid>
     <ylabel>täglich</ylabel>
-    <y2label>gesamt</y2label>
+    <!--y2label>gesamt</y2label-->
     <source>daily</source>
     <subplot>
       <colour>rgb "#2196f3"</colour>
