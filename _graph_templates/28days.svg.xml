@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <graph xmlns:xi="http://www.w3.org/2001/XInclude">
-  <xi:include href="includes/size_4.xml" parse="xml" />
+  <xi:include href="includes/size_5.xml" parse="xml" />
   <xi:include href="includes/format_svg.xml" parse="xml" />
   <duration>weeks=4</duration>
   <xformat>%Y/%m/%d</xformat>
@@ -10,4 +10,5 @@
   <xi:include href="includes/hourly_wind_gust_line.xml" parse="xml" />
   <xi:include href="includes/daily_rain_sum_dual.xml" parse="xml" />
   <xi:include href="includes/hourly_baro_line.xml" parse="xml" />
+  <xi:include href="includes/hourly_cloud_base_line.xml" parse="xml" />
 </graph>
