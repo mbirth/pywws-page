@@ -133,22 +133,26 @@
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-7">
       <div class="page-content"><!-- 2009 -->
-        <img src="2009.svg" />
+        <img src="2009_temp.svg" /><br />
+        <img src="2009_rain.svg" />
       </div>
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-8">
       <div class="page-content"><!-- 2010 -->
-        <img src="2010.svg" />
+        <img src="2010_temp.svg" /><br />
+        <img src="2010_rain.svg" />
       </div>
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-9">
       <div class="page-content"><!-- 2011 -->
-        <img src="2011.svg" />
+        <img src="2011_temp.svg" /><br />
+        <img src="2011_rain.svg" />
       </div>
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-10">
       <div class="page-content"><!-- 2012 -->
-        <img src="2012.svg" />
+        <img src="2012_temp.svg" /><br />
+        <img src="2012_rain.svg" />
       </div>
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-11">
