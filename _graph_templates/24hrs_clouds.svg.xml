@@ -5,6 +5,7 @@
   <duration>hours=24</duration>
   <xtics>2</xtics>
   <xformat>%H%M</xformat>
+  <xlabel></xlabel>
   <dateformat></dateformat>
   <xi:include href="includes/raw_cloud_base_line.xml" parse="xml" />
 </graph>

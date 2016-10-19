@@ -4,6 +4,7 @@
   <xi:include href="includes/format_svg.xml" parse="xml" />
   <duration>weeks=1</duration>
   <xformat>%a %d</xformat>
+  <xlabel></xlabel>
   <dateformat></dateformat>
   <xi:include href="includes/hourly_temp_dew_feel_line.xml" parse="xml" />
   <xi:include href="includes/hourly_wind_gust_line.xml" parse="xml" />
