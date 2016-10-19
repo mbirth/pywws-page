@@ -16,6 +16,11 @@
     <td>#temp_out_max_t "%Y-%m-%d</td><td>%H%M %Z"#</td>
   </tr>
   <tr>
+    <th class="right">Tag durchschn. Temperatur</th>
+    <td>#temp_out_ave "%.1f ℃"#</td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
     <th class="right">Nacht min. Temperatur</th>
     <td>#temp_out_min "%.1f ℃"#</td>
     <td>#temp_out_min_t "%Y-%m-%d</td><td>%H%M %Z"#</td>
