@@ -103,7 +103,11 @@
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-3">
       <div class="page-content"><!-- letzte 7 Tage -->
-        <img src="7days.svg" />
+        <img src="7days_temp.svg" />
+        <img src="7days_wind.svg" />
+        <img src="7days_rain.svg" />
+        <img src="7days_baro.svg" />
+        <img src="7days_clouds.svg" />
         <?php include('7days.txt'); ?>
         <img src="rose_7days_nights.svg" />
       </div>
