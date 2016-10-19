@@ -92,7 +92,11 @@
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-2">
       <div class="page-content"><!-- letzte 24 Stunden -->
-        <img src="24hrs.svg" />
+        <img src="24hrs_temp.svg" />
+        <img src="24hrs_wind.svg" />
+        <img src="24hrs_rain.svg" />
+        <img src="24hrs_baro.svg" />
+        <img src="24hrs_clouds.svg" />
         <?php include('24hrs.txt'); ?>
         <img src="rose_24hrs.svg" />
       </div>
