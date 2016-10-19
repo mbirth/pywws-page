@@ -153,7 +153,8 @@
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-11">
       <div class="page-content"><!-- 2016 -->
-        <img src="2016.svg" />
+        <img src="2016_temp.svg" /><br />
+        <img src="2016_rain.svg" />
       </div>
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-12">

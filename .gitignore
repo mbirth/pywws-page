@@ -2,10 +2,12 @@
 /12months.txt
 /20*.png
 /20*.svg
-/24hrs.*
-/28days.*
+/24hrs.txt
+/24hrs_*
+/28days_*
 /6hrs.txt
-/7days.*
+/7days.txt
+/7days_*
 /allmonths.txt
 /feed_*.xml
 /humidex.*
