@@ -114,7 +114,11 @@
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-4">
       <div class="page-content"><!-- letzte 28 Tage -->
-        <img src="28days.svg" />
+        <img src="28days_temp.svg" />
+        <img src="28days_wind.svg" />
+        <img src="28days_rain.svg" />
+        <img src="28days_baro.svg" />
+        <img src="28days_clouds.svg" />
       </div>
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-5">
