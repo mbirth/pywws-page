@@ -11,8 +11,8 @@
 
   <meta property="og:title" content="Wetterdaten für Falkensee"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://fks.birth-online.de/"/>
-  <meta property="og:image" content="http://fks.birth-online.de/falkensee.png"/>
+  <meta property="og:url" content="https://fks.birth-online.de/"/>
+  <meta property="og:image" content="https://fks.birth-online.de/falkensee.png"/>
   <meta property="og:description" content="Wetterdaten für Falkensee seit 2009."/>
   <meta property="og:latitude" content="52.574202"/>
   <meta property="og:longitude" content="13.127534"/>
@@ -81,7 +81,7 @@
       <a class="mdl-navigation__link" href="https://twitter.com/_FalkenseeDE"><img src="img/icon_twitter.png"/> Twitter</a>
       <a class="mdl-navigation__link" rel="author" href="https://plus.google.com/+GottfriedBirth"><img src="//ssl.gstatic.com/images/icons/gplus-16.png"/> Google+</a>
       <a class="mdl-navigation__link" href="https://github.com/mbirth/pywws-page"><img src="//github.com/favicon.ico"/> GitHub</a>
-      <a class="mdl-navigation__link" href="http://markus.birth-online.de/">Kontakt / Impressum</a>
+      <a class="mdl-navigation__link" href="https://markus.birth-online.de/">Kontakt / Impressum</a>
     </nav>
   </div>
   <main class="mdl-layout__content">
@@ -164,21 +164,21 @@
     <section class="mdl-layout__tab-panel" id="scroll-tab-12">
       <div class="page-content"><!-- WUnderground -->
         <p>
-          <a href="http://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=IBRANDEN17&amp;graphspan=week" target="_blank">
+          <a href="//www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=IBRANDEN17" target="_blank">
             Diese Station bei <em>Weather Underground</em>:<br />
             <img src="http://banners.wunderground.com/cgi-bin/banner/ban/wxBanner?bannertype=pws250_metric&amp;weatherstationcount=IBRANDEN17" />
             <img src="http://banners.wunderground.com/cgi-bin/banner/ban/wxBanner?bannertype=WeatherStationCount&amp;weatherstationcount=IBRANDEN17" height="160" width="163" border="0" alt="Weather Underground PWS IBRANDEN17" />
 
           </a>
           <object width="290" height="130">
-            <param name="movie" value="http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=IBRANDEN17&amp;freq=&amp;units=metric&amp;lang=EN" />
-            <embed src="http://www.wunderground.com/swf/pws_mini_rf_nc.swf?station=IBRANDEN17&amp;freq=&amp;units=metric&amp;lang=EN" type="application/x-shockwave-flash" width="290" height="130" />
+            <param name="movie" value="//www.wunderground.com/swf/pws_mini_rf_nc.swf?station=IBRANDEN17&amp;freq=&amp;units=metric&amp;lang=EN" />
+            <embed src="//www.wunderground.com/swf/pws_mini_rf_nc.swf?station=IBRANDEN17&amp;freq=&amp;units=metric&amp;lang=EN" type="application/x-shockwave-flash" width="290" height="130" />
           </object>
         </p>
         <p>
           <object width="600" height="400">
-            <param name="movie" value="http://www.wunderground.com/swf/Rapid_Fire.swf?units=metric&amp;station=IBRANDEN17" />
-            <embed src="http://www.wunderground.com/swf/Rapid_Fire.swf?units=metric&amp;station=IBRANDEN17" type="application/x-shockwave-flash" width="600" height="400" />
+            <param name="movie" value="//www.wunderground.com/swf/Rapid_Fire.swf?units=metric&amp;station=IBRANDEN17" />
+            <embed src="//www.wunderground.com/swf/Rapid_Fire.swf?units=metric&amp;station=IBRANDEN17" type="application/x-shockwave-flash" width="600" height="400" />
           </object>
         </p>
       </div>
