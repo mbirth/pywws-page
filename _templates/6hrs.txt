@@ -2,40 +2,47 @@
 #locale True#
 #timezone local#
 #roundtime True#
-<table border="1" rules="all">
-  <tr>
-    <th colspan="2" rowspan="2">Datum &amp; Zeit</th>
-    <th rowspan="2">Temp</th>
-    <th rowspan="2">Gefühlt</th>
-    <th rowspan="2">Feuchte</th>
-    <th colspan="3">Wind</th>
-    <th rowspan="2">Regen</th>
-    <th rowspan="2">Luftdruck</th>
-    <th rowspan="2"><a href="https://de.wikipedia.org/wiki/Kondensationsniveau##Konvektionskondensationsniveau" title="Quellwolkenuntergrenze">KKN</a></th>
-    <th rowspan="2">Vorhersage</th>
-  </tr>
-  <tr>
-    <th>Ri</th>
-    <th>Ø</th>
-    <th>Boe</th>
-  </tr>
+<table border="1" rules="all" class="mdl-data-table mdl-js-data-table">
+  <thead>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric mdl-data-table__header--sorted-ascending" colspan="2" rowspan="2">Datum &amp; Zeit</th>
+      <th class="mdl-data-table__cell--non-numeric" rowspan="2">Temp</th>
+      <th class="mdl-data-table__cell--non-numeric" rowspan="2">Gefühlt</th>
+      <th class="mdl-data-table__cell--non-numeric" rowspan="2">Feuchte</th>
+      <th class="mdl-data-table__cell--non-numeric" colspan="3">Wind</th>
+      <th class="mdl-data-table__cell--non-numeric" rowspan="2">Regen</th>
+      <th class="mdl-data-table__cell--non-numeric" colspan="2">Luftdruck</th>
+      <th class="mdl-data-table__cell--non-numeric" rowspan="2"><a href="https://de.wikipedia.org/wiki/Kondensationsniveau##Konvektionskondensationsniveau" title="Quellwolkenuntergrenze">KKN</a></th>
+      <th class="mdl-data-table__cell--non-numeric" rowspan="2">Vorhersage</th>
+    </tr>
+    <tr>
+      <th class="mdl-data-table__cell--non-numeric">Ri</th>
+      <th class="mdl-data-table__cell--non-numeric">Ø</th>
+      <th class="mdl-data-table__cell--non-numeric">Boe</th>
+      <th class="mdl-data-table__cell--non-numeric">Druck</th>
+      <th class="mdl-data-table__cell--non-numeric">Tendenz</th>
+    </tr>
+  </thead>
+  <tbody>
 #hourly#
 #jump -6#
 #loop 7#
-  <tr>
-    <td>#idx "%Y-%m-%d" "" "[None, x][x.hour == 0 or loop_count == 7]"#</td>
-    <td>#idx "%H%M %Z"#</td>
-    <td>#temp_out "%.1f ℃"#</td>
-    <td>#calc "apparent_temp(data['temp_out'], data['hum_out'], data['wind_ave'])" "%.1f ℃"#</td>
-    <td>#hum_out "%d%%"#</td>
-    <td>#wind_dir "%s" "-" "winddir_text(x)"#</td>
-    <td>#wind_ave "%.0f ㎞/h" "" "wind_kmph(x)"#</td>
-    <td>#wind_gust "%.0f ㎞/h" "" "wind_kmph(x)"#</td>
-    <td>#rain "%0.1f ㎜"#</td>
-    <td>#rel_pressure "%.0f ㍱"#, #pressure_trend "%s" "" "pressure_trend_text(x)"#</td>
-    <td>#calc "cloud_base(data['temp_out'], data['hum_out'])" "%.0f m"#</td>
-    <td>#calc "Zambretti(params, data)"#</td>
-  </tr>
+    <tr>
+      <td>#idx "%Y-%m-%d" "" "[None, x][x.hour == 0 or loop_count == 7]"#</td>
+      <td>#idx "%H%M %Z"#</td>
+      <td>#temp_out "%.1f ℃"#</td>
+      <td>#calc "apparent_temp(data['temp_out'], data['hum_out'], data['wind_ave'])" "%.1f ℃"#</td>
+      <td>#hum_out "%d%%"#</td>
+      <td class="mdl-data-table__cell--non-numeric">#wind_dir "%s" "-" "winddir_text(x)"#</td>
+      <td>#wind_ave "%.0f ㎞/h" "" "wind_kmph(x)"#</td>
+      <td>#wind_gust "%.0f ㎞/h" "" "wind_kmph(x)"#</td>
+      <td>#rain "%0.1f ㎜"#</td>
+      <td>#rel_pressure "%.0f ㍱"#</td>
+      <td class="mdl-data-table__cell--non-numeric">#pressure_trend "%s" "" "pressure_trend_text(x)"#</td>
+      <td>#calc "cloud_base(data['temp_out'], data['hum_out'])" "%.0f m"#</td>
+      <td class="mdl-data-table__cell--non-numeric">#calc "Zambretti(params, data)"#</td>
+    </tr>
 #jump 1#
 #endloop#
+  </tbody>
 </table>

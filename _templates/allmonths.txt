@@ -2,40 +2,44 @@
 #locale True#
 #timezone local#
 <table border="1" rules="all">
-  <tr>
-    <th rowspan="3">Monat</th>
-    <th colspan="7">Temperatur</th>
-    <th colspan="2">Regen</th>
-  </tr>
-  <tr>
-    <th colspan="3">Tag max.</th>
-    <th rowspan="2">Ø</th>
-    <th colspan="3">Nacht min.</th>
-    <th rowspan="2">Menge</th>
-    <th rowspan="2">Tage</th>
-  </tr>
-  <tr>
-    <th>höchstes</th>
-    <th>durchschn.</th>
-    <th>tiefstes</th>
-    <th>höchstes</th>
-    <th>durchschn.</th>
-    <th>tiefstes</th>
-  </tr>
+  <thead>
+    <tr>
+      <th rowspan="3">Monat</th>
+      <th colspan="7">Temperatur</th>
+      <th colspan="2">Regen</th>
+    </tr>
+    <tr>
+      <th colspan="3">Tag max.</th>
+      <th rowspan="2">Ø</th>
+      <th colspan="3">Nacht min.</th>
+      <th rowspan="2">Menge</th>
+      <th rowspan="2">Tage</th>
+    </tr>
+    <tr>
+      <th>höchstes</th>
+      <th>durchschn.</th>
+      <th>tiefstes</th>
+      <th>höchstes</th>
+      <th>durchschn.</th>
+      <th>tiefstes</th>
+    </tr>
+  </thead>
+  <tbody>
 #monthly#
 #loop 10000#
-  <tr>
-    <td class="right">#idx "%B %Y"#</td>
-    <td>#temp_out_max_hi "%.1f ℃"#</td>
-    <td>#temp_out_max_ave "%.1f ℃"#</td>
-    <td>#temp_out_max_lo "%.1f ℃"#</td>
-    <td>#temp_out_ave "%.1f ℃"#</td>
-    <td>#temp_out_min_hi "%.1f ℃"#</td>
-    <td>#temp_out_min_ave "%.1f ℃"#</td>
-    <td>#temp_out_min_lo "%.1f ℃"#</td>
-    <td>#rain "%0.1f ㎜"#</td>
-    <td>#rain_days "%d"#</td>
-  </tr>
+    <tr>
+      <td class="right">#idx "%B %Y"#</td>
+      <td>#temp_out_max_hi "%.1f ℃"#</td>
+      <td>#temp_out_max_ave "%.1f ℃"#</td>
+      <td>#temp_out_max_lo "%.1f ℃"#</td>
+      <td>#temp_out_ave "%.1f ℃"#</td>
+      <td>#temp_out_min_hi "%.1f ℃"#</td>
+      <td>#temp_out_min_ave "%.1f ℃"#</td>
+      <td>#temp_out_min_lo "%.1f ℃"#</td>
+      <td>#rain "%0.1f ㎜"#</td>
+      <td>#rain_days "%d"#</td>
+    </tr>
 #jump -1#
 #endloop#
+  </tbody>
 </table>
