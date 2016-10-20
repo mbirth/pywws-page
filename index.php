@@ -55,6 +55,10 @@
     .mdl-layout__tab-panel.is-active {
       display: block;
     }
+
+    .mdl-layout__tab-panel.is-scrollable {
+      overflow-x: auto;
+    }
   </style>
 </head>
 <body>
@@ -93,7 +97,7 @@
     </nav>
   </div>
   <main class="mdl-layout__content">
-    <section class="mdl-layout__tab-panel is-active" id="scroll-tab-6hrs">
+    <section class="mdl-layout__tab-panel is-active is-scrollable" id="scroll-tab-6hrs">
       <div class="page-content"><!-- letzte 6 Stunden -->
         <?php include('6hrs.txt'); ?>
       </div>
