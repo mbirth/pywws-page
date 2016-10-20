@@ -47,6 +47,14 @@
       width: 100%;
       height: 100%;
     }
+
+    .mdl-layout__tab-panel {
+      display: none;
+    }
+
+    .mdl-layout__tab-panel.is-active {
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -70,7 +78,6 @@
       <a href="#scroll-tab-2010" class="mdl-layout__tab">2010</a>
       <a href="#scroll-tab-2009" class="mdl-layout__tab">2009</a>
       <a href="#scroll-tab-alldata" class="mdl-layout__tab">Alle Monate</a>
-      <a href="#scroll-tab-wu" class="mdl-layout__tab">WUnderground</a>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -160,28 +167,6 @@
     <section class="mdl-layout__tab-panel" id="scroll-tab-alldata">
       <div class="page-content"><!-- alle Monate -->
         <?php include('allmonths.txt'); ?>
-      </div>
-    </section>
-    <section class="mdl-layout__tab-panel" id="scroll-tab-wu">
-      <div class="page-content"><!-- WUnderground -->
-        <p>
-          <a href="//www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=IBRANDEN17" target="_blank">
-            Diese Station bei <em>Weather Underground</em>:<br />
-            <img src="http://banners.wunderground.com/cgi-bin/banner/ban/wxBanner?bannertype=pws250_metric&amp;weatherstationcount=IBRANDEN17" />
-            <img src="http://banners.wunderground.com/cgi-bin/banner/ban/wxBanner?bannertype=WeatherStationCount&amp;weatherstationcount=IBRANDEN17" height="160" width="163" border="0" alt="Weather Underground PWS IBRANDEN17" />
-
-          </a>
-          <object width="290" height="130">
-            <param name="movie" value="//www.wunderground.com/swf/pws_mini_rf_nc.swf?station=IBRANDEN17&amp;freq=&amp;units=metric&amp;lang=EN" />
-            <embed src="//www.wunderground.com/swf/pws_mini_rf_nc.swf?station=IBRANDEN17&amp;freq=&amp;units=metric&amp;lang=EN" type="application/x-shockwave-flash" width="290" height="130" />
-          </object>
-        </p>
-        <p>
-          <object width="600" height="400">
-            <param name="movie" value="//www.wunderground.com/swf/Rapid_Fire.swf?units=metric&amp;station=IBRANDEN17" />
-            <embed src="//www.wunderground.com/swf/Rapid_Fire.swf?units=metric&amp;station=IBRANDEN17" type="application/x-shockwave-flash" width="600" height="400" />
-          </object>
-        </p>
       </div>
     </section>
   </main>
