@@ -5,21 +5,21 @@
 <table border="1" rules="all" class="mdl-data-table mdl-js-data-table">
   <thead>
     <tr>
-      <th class="mdl-data-table__cell--non-numeric mdl-data-table__header--sorted-ascending" colspan="2" rowspan="2">Datum &amp; Zeit</th>
-      <th class="mdl-data-table__cell--non-numeric" rowspan="2">Temp</th>
-      <th class="mdl-data-table__cell--non-numeric" rowspan="2">Gefühlt</th>
-      <th class="mdl-data-table__cell--non-numeric" rowspan="2">Feuchte</th>
+      <th class="mdl-data-table__header--sorted-ascending" colspan="2" rowspan="2">Datum &amp; Zeit</th>
+      <th rowspan="2">Temp</th>
+      <th rowspan="2">Gefühlt</th>
+      <th rowspan="2">Feuchte</th>
       <th class="mdl-data-table__cell--non-numeric" colspan="3">Wind</th>
-      <th class="mdl-data-table__cell--non-numeric" rowspan="2">Regen</th>
+      <th rowspan="2">Regen</th>
       <th class="mdl-data-table__cell--non-numeric" colspan="2">Luftdruck</th>
-      <th class="mdl-data-table__cell--non-numeric" rowspan="2"><a href="https://de.wikipedia.org/wiki/Kondensationsniveau##Konvektionskondensationsniveau" title="Quellwolkenuntergrenze">KKN</a></th>
+      <th rowspan="2"><a href="https://de.wikipedia.org/wiki/Kondensationsniveau##Konvektionskondensationsniveau" title="Quellwolkenuntergrenze">KKN</a></th>
       <th class="mdl-data-table__cell--non-numeric" rowspan="2">Vorhersage</th>
     </tr>
     <tr>
       <th class="mdl-data-table__cell--non-numeric">Ri</th>
-      <th class="mdl-data-table__cell--non-numeric">Ø</th>
-      <th class="mdl-data-table__cell--non-numeric">Boe</th>
-      <th class="mdl-data-table__cell--non-numeric">Druck</th>
+      <th>Ø</th>
+      <th>Boe</th>
+      <th>Druck</th>
       <th class="mdl-data-table__cell--non-numeric">Tendenz</th>
     </tr>
   </thead>
