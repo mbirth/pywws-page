@@ -1,3 +1,6 @@
+#encoding utf8#
+#locale True#
+#timezone local#
 <table border="1" rules="all">
   <tr>
     <th rowspan="2">letzte 24 Std. bis</th>
@@ -13,7 +16,6 @@
     <th>durchschn.</th>
     <th>max. Boe</th>
   </tr>
-#timezone local#
 #daily#
 #jump -7#
 #loop 7#

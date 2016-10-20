@@ -1,3 +1,5 @@
+#encoding utf8#
+#locale True#
 #timezone local#
 #hourly#
 <?xml version="1.0" encoding="utf-8" ?>

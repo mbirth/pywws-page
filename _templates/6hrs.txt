@@ -1,4 +1,7 @@
-#encoding html#
+#encoding utf8#
+#locale True#
+#timezone local#
+#roundtime True#
 <table border="1" rules="all">
   <tr>
     <th colspan="2" rowspan="2">Datum &amp; Zeit</th>
@@ -16,8 +19,6 @@
     <th>Ø</th>
     <th>Boe</th>
   </tr>
-#timezone local#
-#roundtime True#
 #hourly#
 #jump -6#
 #loop 7#

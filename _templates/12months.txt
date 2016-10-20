@@ -1,4 +1,6 @@
-#encoding html#
+#encoding utf8#
+#locale True#
+#timezone local#
 <table border="1" rules="all">
   <tr>
     <th rowspan="3">Monat</th>
@@ -20,7 +22,6 @@
     <th>durchschn.</th>
     <th>tiefste</th>
   </tr>
-#timezone local#
 #monthly#
 #jump -11#
 #loop 12#

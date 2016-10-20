@@ -1,7 +1,8 @@
-#encoding html#
-#daily#
+#encoding utf8#
+#locale True#
 #timezone local#
 #roundtime True#
+#daily#
 <table border="1" rules="all">
 #jump -1#
 #loop 2#

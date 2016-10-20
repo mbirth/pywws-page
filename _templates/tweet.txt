@@ -1,7 +1,9 @@
 media /opt/pywws/localout/tweet.png
-#hourly#
+#encoding utf8#
+#locale True#
 #timezone local#
 #roundtime True#
+#hourly#
 #idx "%H:%M %Z:"# 🌡#temp_out "%.1f℃" "-"#
 , 🌀  #wind_dir "%s, " "" "winddir_text(x)"#
 #wind_ave "Ø %.0f ㎞/h, " "" "wind_kmph(x)"#
