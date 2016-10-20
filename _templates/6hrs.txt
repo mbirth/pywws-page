@@ -11,7 +11,7 @@
     <th colspan="3">Wind</th>
     <th rowspan="2">Regen</th>
     <th rowspan="2">Luftdruck</th>
-    <th rowspan="2"><a href="https://de.wikipedia.org/wiki/Kondensationsniveau">KKN</a></th>
+    <th rowspan="2"><a href="https://de.wikipedia.org/wiki/Kondensationsniveau##Konvektionskondensationsniveau" title="Quellwolkenuntergrenze">KKN</a></th>
     <th rowspan="2">Vorhersage</th>
   </tr>
   <tr>

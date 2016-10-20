@@ -6,5 +6,5 @@
   <xformat>%a %d</xformat>
   <xlabel></xlabel>
   <dateformat></dateformat>
-  <xi:include href="includes/hourly_temp_dew_feel_line.xml" parse="xml" />
+  <xi:include href="includes/hourly_temp_feel_dew_line.xml" parse="xml" />
 </graph>

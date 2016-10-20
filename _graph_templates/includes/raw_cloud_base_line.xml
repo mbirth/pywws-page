@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
   <plot>
-    <title>Konvektionskondensationsniveau (m)</title>
+    <!-- Konvektionskondensationsniveau -->
     <yrange>0, 2500</yrange>
     <grid>ytics</grid>
     <source>raw</source>
     <subplot>
       <colour>3</colour>
       <ycalc>cloud_base(data['temp_out'], data['hum_out'])</ycalc>
-      <title>Meter über Boden</title>
+      <title>Quellwolkenuntergrenze (m über Boden)</title>
     </subplot>
   </plot>
 
