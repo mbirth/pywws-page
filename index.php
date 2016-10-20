@@ -59,18 +59,18 @@
     </div>
     <!-- Tabs -->
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-      <a href="#scroll-tab-1" class="mdl-layout__tab is-active">6 Std.</a>
-      <a href="#scroll-tab-2" class="mdl-layout__tab">24 Std.</a>
-      <a href="#scroll-tab-3" class="mdl-layout__tab">7 Tage</a>
-      <a href="#scroll-tab-4" class="mdl-layout__tab">28 Tage</a>
-      <a href="#scroll-tab-5" class="mdl-layout__tab">12 Monate</a>
-      <a href="#scroll-tab-6" class="mdl-layout__tab">Alle Monate</a>
-      <a href="#scroll-tab-7" class="mdl-layout__tab">2009</a>
-      <a href="#scroll-tab-8" class="mdl-layout__tab">2010</a>
-      <a href="#scroll-tab-9" class="mdl-layout__tab">2011</a>
-      <a href="#scroll-tab-10" class="mdl-layout__tab">2012</a>
-      <a href="#scroll-tab-11" class="mdl-layout__tab">2016</a>
-      <a href="#scroll-tab-12" class="mdl-layout__tab">WUnderground</a>
+      <a href="#scroll-tab-6hrs" class="mdl-layout__tab is-active">6 Std.</a>
+      <a href="#scroll-tab-24hrs" class="mdl-layout__tab">24 Std.</a>
+      <a href="#scroll-tab-7days" class="mdl-layout__tab">7 Tage</a>
+      <a href="#scroll-tab-28days" class="mdl-layout__tab">28 Tage</a>
+      <a href="#scroll-tab-12mo" class="mdl-layout__tab">12 Monate</a>
+      <a href="#scroll-tab-2016" class="mdl-layout__tab">2016</a>
+      <a href="#scroll-tab-2012" class="mdl-layout__tab">2012</a>
+      <a href="#scroll-tab-2011" class="mdl-layout__tab">2011</a>
+      <a href="#scroll-tab-2010" class="mdl-layout__tab">2010</a>
+      <a href="#scroll-tab-2009" class="mdl-layout__tab">2009</a>
+      <a href="#scroll-tab-alldata" class="mdl-layout__tab">Alle Monate</a>
+      <a href="#scroll-tab-wu" class="mdl-layout__tab">WUnderground</a>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -78,6 +78,7 @@
     <div><img src="img/falkensee.svg"/></div>
     <nav class="mdl-navigation">
       <a class="mdl-navigation__link" href="https://github.com/jim-easterbrook/pywws">powered by pywws</a>
+      <a class="mdl-navigation__link" href="https://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=IBRANDEN17"><img src="img/icon_wunderground.png"/> WUnderground</a>
       <a class="mdl-navigation__link" href="https://twitter.com/_FalkenseeDE"><img src="img/icon_twitter.png"/> Twitter</a>
       <a class="mdl-navigation__link" rel="author" href="https://plus.google.com/+GottfriedBirth"><img src="img/icon_gplus.png"/> Google+</a>
       <a class="mdl-navigation__link" href="https://github.com/mbirth/pywws-page"><img src="img/icon_github.png"/> GitHub</a>
@@ -85,12 +86,12 @@
     </nav>
   </div>
   <main class="mdl-layout__content">
-    <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+    <section class="mdl-layout__tab-panel is-active" id="scroll-tab-6hrs">
       <div class="page-content"><!-- letzte 6 Stunden -->
         <?php include('6hrs.txt'); ?>
       </div>
     </section>
-    <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+    <section class="mdl-layout__tab-panel" id="scroll-tab-24hrs">
       <div class="page-content"><!-- letzte 24 Stunden -->
         <img src="24hrs_temp.svg" />
         <img src="24hrs_wind.svg" />
@@ -101,7 +102,7 @@
         <img src="rose_24hrs.svg" />
       </div>
     </section>
-    <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+    <section class="mdl-layout__tab-panel" id="scroll-tab-7days">
       <div class="page-content"><!-- letzte 7 Tage -->
         <img src="7days_temp.svg" />
         <img src="7days_wind.svg" />
@@ -112,7 +113,7 @@
         <img src="rose_7days_nights.svg" />
       </div>
     </section>
-    <section class="mdl-layout__tab-panel" id="scroll-tab-4">
+    <section class="mdl-layout__tab-panel" id="scroll-tab-28days">
       <div class="page-content"><!-- letzte 28 Tage -->
         <img src="28days_temp.svg" />
         <img src="28days_wind.svg" />
@@ -121,47 +122,47 @@
         <img src="28days_clouds.svg" />
       </div>
     </section>
-    <section class="mdl-layout__tab-panel" id="scroll-tab-5">
+    <section class="mdl-layout__tab-panel" id="scroll-tab-12mo">
       <div class="page-content"><!-- letzte 12 Monate -->
         <?php include('12months.txt'); ?>
       </div>
     </section>
-    <section class="mdl-layout__tab-panel" id="scroll-tab-6">
-      <div class="page-content"><!-- alle Monate -->
-        <?php include('allmonths.txt'); ?>
-      </div>
-    </section>
-    <section class="mdl-layout__tab-panel" id="scroll-tab-7">
-      <div class="page-content"><!-- 2009 -->
-        <img src="2009_temp.svg" /><br />
-        <img src="2009_rain.svg" />
-      </div>
-    </section>
-    <section class="mdl-layout__tab-panel" id="scroll-tab-8">
-      <div class="page-content"><!-- 2010 -->
-        <img src="2010_temp.svg" /><br />
-        <img src="2010_rain.svg" />
-      </div>
-    </section>
-    <section class="mdl-layout__tab-panel" id="scroll-tab-9">
-      <div class="page-content"><!-- 2011 -->
-        <img src="2011_temp.svg" /><br />
-        <img src="2011_rain.svg" />
-      </div>
-    </section>
-    <section class="mdl-layout__tab-panel" id="scroll-tab-10">
-      <div class="page-content"><!-- 2012 -->
-        <img src="2012_temp.svg" /><br />
-        <img src="2012_rain.svg" />
-      </div>
-    </section>
-    <section class="mdl-layout__tab-panel" id="scroll-tab-11">
+    <section class="mdl-layout__tab-panel" id="scroll-tab-2016">
       <div class="page-content"><!-- 2016 -->
         <img src="2016_temp.svg" /><br />
         <img src="2016_rain.svg" />
       </div>
     </section>
-    <section class="mdl-layout__tab-panel" id="scroll-tab-12">
+    <section class="mdl-layout__tab-panel" id="scroll-tab-2012">
+      <div class="page-content"><!-- 2012 -->
+        <img src="2012_temp.svg" /><br />
+        <img src="2012_rain.svg" />
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-2011">
+      <div class="page-content"><!-- 2011 -->
+        <img src="2011_temp.svg" /><br />
+        <img src="2011_rain.svg" />
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-2010">
+      <div class="page-content"><!-- 2010 -->
+        <img src="2010_temp.svg" /><br />
+        <img src="2010_rain.svg" />
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-2009">
+      <div class="page-content"><!-- 2009 -->
+        <img src="2009_temp.svg" /><br />
+        <img src="2009_rain.svg" />
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-alldata">
+      <div class="page-content"><!-- alle Monate -->
+        <?php include('allmonths.txt'); ?>
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-wu">
       <div class="page-content"><!-- WUnderground -->
         <p>
           <a href="//www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=IBRANDEN17" target="_blank">
