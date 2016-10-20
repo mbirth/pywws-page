@@ -24,9 +24,9 @@
   <meta property="og:phone_number" content="+49 3322 3198"/>
   <meta property="og:fax_number" content="+49 3322 289547"/>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-  <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css"/>
-  <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+  <link rel="stylesheet" href="css/materialicons.css"/>
+  <link rel="stylesheet" href="css/material.indigo-pink.min.css"/>
+  <script defer src="js/material.min.js"></script>
   <style type="text/css">
     .mdl-layout__drawer img {
       width: 16px;
@@ -79,8 +79,8 @@
     <nav class="mdl-navigation">
       <a class="mdl-navigation__link" href="https://github.com/jim-easterbrook/pywws">powered by pywws</a>
       <a class="mdl-navigation__link" href="https://twitter.com/_FalkenseeDE"><img src="img/icon_twitter.png"/> Twitter</a>
-      <a class="mdl-navigation__link" rel="author" href="https://plus.google.com/+GottfriedBirth"><img src="//ssl.gstatic.com/images/icons/gplus-16.png"/> Google+</a>
-      <a class="mdl-navigation__link" href="https://github.com/mbirth/pywws-page"><img src="//github.com/favicon.ico"/> GitHub</a>
+      <a class="mdl-navigation__link" rel="author" href="https://plus.google.com/+GottfriedBirth"><img src="img/icon_gplus.png"/> Google+</a>
+      <a class="mdl-navigation__link" href="https://github.com/mbirth/pywws-page"><img src="img/icon_github.png"/> GitHub</a>
       <a class="mdl-navigation__link" href="https://markus.birth-online.de/">Kontakt / Impressum</a>
     </nav>
   </div>
