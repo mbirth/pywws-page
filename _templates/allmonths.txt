@@ -1,17 +1,17 @@
 #encoding utf8#
 #locale True#
 #timezone local#
-<table border="1" rules="all">
+<table border="1" rules="all" class="mdl-data-table mdl-js-data-table">
   <thead>
     <tr>
-      <th rowspan="3">Monat</th>
-      <th colspan="7">Temperatur</th>
-      <th colspan="2">Regen</th>
+      <th rowspan="3" class="mdl-data-table__cell--non-numeric">Monat</th>
+      <th colspan="7" class="mdl-data-table__cell--non-numeric">Temperatur</th>
+      <th colspan="2" class="mdl-data-table__cell--non-numeric">Regen</th>
     </tr>
     <tr>
-      <th colspan="3">Tag max.</th>
+      <th colspan="3" class="mdl-data-table__cell--non-numeric">Tag max.</th>
       <th rowspan="2">Ø</th>
-      <th colspan="3">Nacht min.</th>
+      <th colspan="3" class="mdl-data-table__cell--non-numeric">Nacht min.</th>
       <th rowspan="2">Menge</th>
       <th rowspan="2">Tage</th>
     </tr>
@@ -28,7 +28,7 @@
 #monthly#
 #loop 10000#
     <tr>
-      <td class="right">#idx "%B %Y"#</td>
+      <td class="mdl-data-table__cell--non-numeric">#idx "%B %Y"#</td>
       <td>#temp_out_max_hi "%.1f ℃"#</td>
       <td>#temp_out_max_ave "%.1f ℃"#</td>
       <td>#temp_out_max_lo "%.1f ℃"#</td>
