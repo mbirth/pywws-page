@@ -1,7 +1,7 @@
 #encoding utf8#
 #locale True#
 #timezone local#
-<table border="1" rules="all">
+<table border="1" rules="all" class="mdl-data-table mdl-js-data-table">
   <thead>
     <tr>
       <th rowspan="3">Monat</th>

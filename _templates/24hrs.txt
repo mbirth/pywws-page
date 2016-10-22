@@ -3,47 +3,50 @@
 #timezone local#
 #roundtime True#
 #daily#
-<table border="1" rules="all">
 #jump -1#
 #loop 2#
-  <tr>
-    <th colspan="2" class="left">
-      #start "Von %H%M %Z am %d %b bis" "letzte 24 Std. bis" "[x, None][loop_count == 2]"#
+<table border="1" rules="all">
+  <thead>
+    <tr>
+      <th colspan="2" class="left">
+        #start "Von %H%M %Z am %d %b bis" "letzte 24 Std. bis" "[x, None][loop_count == 2]"#
 #idx " %H%M %Z am %d %b %Y"# 
-    </th>
-    <th colspan="2">Datum &amp; Zeit</th>
-  </tr>
-  <tr>
-    <th class="right">Tag max. Temperatur</th>
-    <td>#temp_out_max "%.1f ℃"#</td>
-    <td>#temp_out_max_t "%Y-%m-%d</td><td>%H%M %Z"#</td>
-  </tr>
-  <tr>
-    <th class="right">Tag durchschn. Temperatur</th>
-    <td>#temp_out_ave "%.1f ℃"#</td>
-    <td colspan="2"></td>
-  </tr>
-  <tr>
-    <th class="right">Nacht min. Temperatur</th>
-    <td>#temp_out_min "%.1f ℃"#</td>
-    <td>#temp_out_min_t "%Y-%m-%d</td><td>%H%M %Z"#</td>
-  </tr>
-  <tr>
-    <th class="right">Gesamter Regenfall</th>
-    <td>#rain "%.1f ㎜"#</td>
-    <td colspan="2"></td>
-  </tr>
-  <tr>
-    <th class="right">Durchschn. Windgeschwindigkeit</th>
-    <td>#wind_ave "%.0f ㎞/h" "-" "wind_kmph(x)"#</td>
-    <td colspan="2"></td>
-  </tr>
-  <tr>
-    <th class="right">Höchste Boe-Geschwindigkeit</th>
-    <td>#wind_gust "%.0f ㎞/h" "-" "wind_kmph(x)"#</td>
-    <td>#wind_gust_t "%Y-%m-%d</td><td>%H%M %Z"#</td>
-  </tr>
-#idx "  <tr><th colspan=\"4\">&nbsp;</th></tr>" "" "[x, None][loop_count==1]"#
+      </th>
+      <th colspan="2">Datum &amp; Zeit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th class="right">Tag max. Temperatur</th>
+      <td>#temp_out_max "%.1f ℃"#</td>
+      <td>#temp_out_max_t "%Y-%m-%d</td><td>%H%M %Z"#</td>
+    </tr>
+    <tr>
+      <th class="right">Tag durchschn. Temperatur</th>
+      <td>#temp_out_ave "%.1f ℃"#</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <th class="right">Nacht min. Temperatur</th>
+      <td>#temp_out_min "%.1f ℃"#</td>
+      <td>#temp_out_min_t "%Y-%m-%d</td><td>%H%M %Z"#</td>
+    </tr>
+    <tr>
+      <th class="right">Gesamter Regenfall</th>
+      <td>#rain "%.1f ㎜"#</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <th class="right">Durchschn. Windgeschwindigkeit</th>
+      <td>#wind_ave "%.0f ㎞/h" "-" "wind_kmph(x)"#</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <th class="right">Höchste Boe-Geschwindigkeit</th>
+      <td>#wind_gust "%.0f ㎞/h" "-" "wind_kmph(x)"#</td>
+      <td>#wind_gust_t "%Y-%m-%d</td><td>%H%M %Z"#</td>
+    </tr>
+  </tbody>
+</table>
 #jump 1#
 #endloop#
-</table>
