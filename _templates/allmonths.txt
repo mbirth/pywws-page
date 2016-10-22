@@ -28,7 +28,7 @@
 #monthly#
 #loop 10000#
     <tr>
-      <td class="mdl-data-table__cell--non-numeric">#idx "%B %Y"#</td>
+      <td class="mdl-data-table__cell--non-numeric mdl-data-table__header--sorted-descending">#idx "%B %Y"#</td>
       <td>#temp_out_max_hi "%.1f ℃"#</td>
       <td>#temp_out_max_ave "%.1f ℃"#</td>
       <td>#temp_out_max_lo "%.1f ℃"#</td>
