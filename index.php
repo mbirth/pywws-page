@@ -59,6 +59,20 @@
     .mdl-layout__tab-panel.is-scrollable {
       overflow-x: auto;
     }
+
+    .mdl-card {
+      width: 1028px;
+      margin: 1em auto;
+    }
+
+    .mdl-card__supporting-text {
+      margin: 0 auto;
+      width: auto;
+    }
+
+    .mdl-card td {
+      color: black;
+    }
   </style>
 </head>
 <body>
@@ -177,7 +191,11 @@
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-alldata">
       <div class="page-content"><!-- alle Monate -->
-        <?php include('allmonths.txt'); ?>
+        <div class="mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__supporting-text">
+            <?php include('allmonths.txt'); ?>
+          </div>
+        </div>
       </div>
     </section>
   </main>
