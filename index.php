@@ -76,6 +76,7 @@
       <a href="#scroll-tab-7days" class="mdl-layout__tab">7 Tage</a>
       <a href="#scroll-tab-28days" class="mdl-layout__tab">28 Tage</a>
       <a href="#scroll-tab-12mo" class="mdl-layout__tab">12 Monate</a>
+      <a href="#scroll-tab-2017" class="mdl-layout__tab">2017</a>
       <a href="#scroll-tab-2016" class="mdl-layout__tab">2016</a>
       <a href="#scroll-tab-2012" class="mdl-layout__tab">2012</a>
       <a href="#scroll-tab-2011" class="mdl-layout__tab">2011</a>
@@ -136,6 +137,12 @@
     <section class="mdl-layout__tab-panel" id="scroll-tab-12mo">
       <div class="page-content"><!-- letzte 12 Monate -->
         <?php include('12months.txt'); ?>
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-2017">
+      <div class="page-content"><!-- 2017 -->
+        <img src="2017_temp.svg" /><br />
+        <img src="2017_rain.svg" />
       </div>
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-2016">
