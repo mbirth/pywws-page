@@ -175,18 +175,23 @@
     </section>
   </main>
 </div>
-<!-- BEGIN Google Analytics -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-259868-13', 'auto');
-  ga('require', 'displayfeatures');
-  ga('require', 'linkid');
-  ga('send', 'pageview');
+<!-- BEGIN Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  // tracker methods like "setCustomDimension" should be called before "trackPageView"
+  _paq.push(["setDoNotTrack", true]);
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.birth-online.de/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'kiwip.js'; s.parentNode.insertBefore(g,s);
+  })();
 </script>
-<!-- END Google Analytics -->
+<noscript><p><img src="//analytics.birth-online.de/piwik.php?idsite=3&rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- END Piwik -->
 </body>
 </html>
