@@ -61,12 +61,13 @@
     }
 
     .mdl-card {
-      width: 1028px;
       margin: 1em auto;
+      display: table;
+      width: auto;
     }
 
     .mdl-card__supporting-text {
-      margin: 0 auto;
+      display: inline-block;
       width: auto;
     }
 
