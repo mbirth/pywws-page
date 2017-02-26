@@ -106,6 +106,7 @@
     <nav class="mdl-navigation">
       <a class="mdl-navigation__link" href="https://github.com/jim-easterbrook/pywws">powered by pywws</a>
       <a class="mdl-navigation__link" href="https://www.wunderground.com/weatherstation/WXDailyHistory.asp?ID=IBRANDEN17"><img src="img/icon_wunderground.png"/> WUnderground</a>
+      <a class="mdl-navigation__link" href="http://netzwerk.wetter.com/wetterstation/18402/"><img src="img/icon_wettercom.png"/> wetter.com</a>
       <a class="mdl-navigation__link" href="https://twitter.com/_FalkenseeDE"><img src="img/icon_twitter.png"/> Twitter</a>
       <a class="mdl-navigation__link" rel="author" href="https://plus.google.com/+GottfriedBirth"><img src="img/icon_gplus.png"/> Google+</a>
       <a class="mdl-navigation__link" href="https://github.com/mbirth/pywws-page"><img src="img/icon_github.png"/> GitHub</a>
