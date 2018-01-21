@@ -1,0 +1,19 @@
+#encoding utf8#
+#locale True#
+#timezone local#
+#hourly#
+Stand: #idx "%Y-%m-%d %H:%M %Z"#<br/>
+Temp gemessen: #temp_out "%.1f ℃"#<br/>
+Temp gefühlt: #calc "apparent_temp(data['temp_out'], data['hum_out'], data['wind_ave'])" "%.1f ℃"#<br/>
+Luftfeuchte: #hum_out "%d%%"#<br/>
+Wind aus #wind_dir "%s" "-" "winddir_text(x)"#<br/>
+Wind mit #wind_ave "%.0f ㎞/h" "" "wind_kmph(x)"#<br/>
+Wind max. #wind_gust "%.0f ㎞/h" "" "wind_kmph(x)"#<br/>
+Regenfall #rain "%0.1f ㎜"#<br/>
+Luftdruck rel. #rel_pressure "%.0f ㍱"#<br/>
+Luftdruck abs. #abs_pressure "%.0f ㍱"#<br/>
+Luftdruck Trend: #pressure_trend "%s" "" "pressure_trend_text(x)"#<br/>
+Quellwolkenuntergrenze: #calc "cloud_base(data['temp_out'], data['hum_out'])" "%.0f m"#<br/>
+
+Wettertrend: #calc "Zambretti(params, data)"#<br/>
+
