@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<graph xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="includes/size_single_big.xml" parse="xml" />
+  <xi:include href="includes/format_svg.xml" parse="xml" />
+  <start>year=2020, month=1, day=1, hour=0</start>
+  <stop>year=2020, month=12, day=31, hour=23</stop>
+  <xformat>%b</xformat>
+  <xlabel></xlabel>
+  <dateformat></dateformat>
+  <xi:include href="includes/monthly_temp_candle.xml" parse="xml" />
+</graph>
