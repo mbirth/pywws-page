@@ -38,6 +38,14 @@
       max-width: 100%;
     }
 
+    .mdl-data-table tr:last-child td, #scroll-tab-alldata tbody tr:first-child td {
+        font-weight: bold;
+    }
+
+    #scroll-tab-24hrs tr:last-child td, #scroll-tab-alldata tr:last-child td {
+        font-weight: normal !important;
+    } 
+
     .mdl-layout__drawer div {
       width: 70%;
       margin: 0 auto;
@@ -91,6 +99,10 @@
       <a href="#scroll-tab-7days" class="mdl-layout__tab">7 Tage</a>
       <a href="#scroll-tab-28days" class="mdl-layout__tab">28 Tage</a>
       <a href="#scroll-tab-12mo" class="mdl-layout__tab">12 Monate</a>
+      <a href="#scroll-tab-2021" class="mdl-layout__tab">2021</a>
+      <a href="#scroll-tab-2020" class="mdl-layout__tab">2020</a>
+      <a href="#scroll-tab-2019" class="mdl-layout__tab">2019</a>
+      <a href="#scroll-tab-2018" class="mdl-layout__tab">2018</a>
       <a href="#scroll-tab-2017" class="mdl-layout__tab">2017</a>
       <a href="#scroll-tab-2016" class="mdl-layout__tab">2016</a>
       <a href="#scroll-tab-2012" class="mdl-layout__tab">2012</a>
@@ -153,6 +165,30 @@
     <section class="mdl-layout__tab-panel" id="scroll-tab-12mo">
       <div class="page-content"><!-- letzte 12 Monate -->
         <?php include('12months.txt'); ?>
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-2021">
+      <div class="page-content"><!-- 2021 -->
+        <img src="2021_temp.svg" /><br />
+        <img src="2021_rain.svg" />
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-2020">
+      <div class="page-content"><!-- 2020 -->
+        <img src="2020_temp.svg" /><br />
+        <img src="2020_rain.svg" />
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-2019">
+      <div class="page-content"><!-- 2019 -->
+        <img src="2019_temp.svg" /><br />
+        <img src="2019_rain.svg" />
+      </div>
+    </section>
+    <section class="mdl-layout__tab-panel" id="scroll-tab-2018">
+      <div class="page-content"><!-- 2018 -->
+        <img src="2018_temp.svg" /><br />
+        <img src="2018_rain.svg" />
       </div>
     </section>
     <section class="mdl-layout__tab-panel" id="scroll-tab-2017">
